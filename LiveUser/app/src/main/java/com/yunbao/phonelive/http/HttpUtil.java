@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.baidu.speech.utils.LogUtil;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.AbsCallback;
 import com.lzy.okgo.callback.StringCallback;
@@ -21,6 +22,7 @@ import com.yunbao.phonelive.bean.UserBean;
 import com.yunbao.phonelive.event.FollowEvent;
 import com.yunbao.phonelive.im.ImPushUtil;
 import com.yunbao.phonelive.interfaces.CommonCallback;
+import com.yunbao.phonelive.logger;
 import com.yunbao.phonelive.utils.L;
 import com.yunbao.phonelive.utils.MD5Util;
 import com.yunbao.phonelive.utils.SpUtil;
@@ -154,7 +156,8 @@ public class HttpUtil {
                                 AppConfig.getInstance().setConfig(bean);
                                 AppConfig.getInstance().setLevel(obj.getString("level"));
                                 AppConfig.getInstance().setAnchorLevel(obj.getString("levelanchor"));
-                                Log.e(HttpUtil.class.getSimpleName(),info[0]);
+
+                                logger.e(HttpUtil.class.getSimpleName(),info[0]);
                                 SpUtil.getInstance().setStringValue(SpUtil.CONFIG, info[0]);
                                 if (commonCallback != null) {
                                     commonCallback.callback(bean);
