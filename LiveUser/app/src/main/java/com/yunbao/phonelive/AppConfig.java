@@ -33,7 +33,7 @@ import java.util.Map;
 public class AppConfig {
 
     //域名
-    public static final String HOST_BASE = "http://47.98.202.55:8688/";
+    public static final String HOST_BASE = "47.98.202.55:8688/";
     public static final String HOST = "http://" + HOST_BASE;
 
     public static final String SOCKET_BASE_IP = "47.98.202.55" ;
