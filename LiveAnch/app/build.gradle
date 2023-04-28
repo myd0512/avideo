@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.yunbao.liveanchor"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+
+    signingConfigs {
+        release {
+            keyAlias 'liveanchor'
+            keyPassword '123456'
+            storeFile file('liveanchor.jks')
+            storePassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    api rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["recyclerview-v7"]
+    implementation rootProject.ext.dependencies["cardview-v7"]
+    implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["constraintlayout"]
+    implementation 'com.android.support:multidex:1.0.1'
+    //网络请求
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.lzy.net:okgo:3.0.4'
+    //OkGo上传下载扩展库
+    implementation 'com.lzy.net:okserver:2.0.5'
+    //socket.io
+    implementation('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    //fastJson解析json
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+    //金山播放和推流SDK
+    implementation 'com.ksyun.media:libksylive-java:3.0.4'
+    implementation 'com.ksyun.media:libksylive-armv7a:3.0.4'
+    //eventbus事件总线
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    //使用Glide加载图片
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //gif库，播放礼物gif用
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.8'
+
+    //带圆角，边框的的ImageView
+    implementation rootProject.ext.dependencies["roundedimageview"]
+    //一个基于Glide的transformation库,拥有裁剪,着色,模糊,滤镜等多种转换效果
+    implementation 'jp.wasabeef:glide-transformations:2.0.2'
+    //腾讯短视频sdk
+    implementation(name: 'LiteAVSDK_UGC_4.4.3774', ext: 'aar')
+    //腾讯bugly
+    implementation 'com.tencent.bugly:crashreport:2.6.6'
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+    //svga
+    implementation 'com.github.yyued:SVGAPlayer-Android:2.4.0'
+    implementation 'org.java-websocket:Java-WebSocket:1.4.0'
+    //百度语音识别
+    compile files('libs/bdasr_3.0.8.2.jar')
+    //shareSDK
+    implementation project(':mob')
+    implementation project(':jpush')
+    implementation project(':beauty')
+
+    implementation files('libs/bdasr_3.0.8.2.jar')
+    implementation files('libs/TencentLocationSdk_v6.2.5.3.jar')
+    implementation files('libs/TencentMapSDK_1.2.8.1.jar')
+}

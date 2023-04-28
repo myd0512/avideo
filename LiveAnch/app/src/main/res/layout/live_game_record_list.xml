@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_game_gift_record"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/live_game_recode_name_tv"
+            style="@style/live_game_gift_record_tv_style"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/live_game_recode_period_tv"
+            style="@style/live_game_gift_record_tv_style"
+            android:layout_weight="3"/>
+        <TextView
+            style="@style/live_game_gift_record_tv_style"
+            android:layout_weight="5"
+            android:textColor="@color/gift_record_nav_checked"
+            android:text="火热下注中！~" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/live_game_recode_list_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/live_game_recode_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:orientation="vertical" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <ProgressBar
+            android:id="@+id/live_game_recode_pb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            style="@style/Widget.AppCompat.ProgressBar" />
+        <TextView
+            android:id="@+id/live_game_recode_null_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:text="暂无记录" />
+    </RelativeLayout>
+</LinearLayout>

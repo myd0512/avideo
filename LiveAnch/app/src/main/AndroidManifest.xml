@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunbao.liveanchor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.NETWORK_PROVIDER" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+
+    <application
+        android:name="AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!--Android 7.0 拍照要用这个-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/FILE_PROVIDER"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity android:name=".activity.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity
+            android:name=".activity.LoginInvalidActivity"
+            android:theme="@style/dialog2" />
+        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.WebViewActivity" android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".activity.LiveInitActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.LiveChooseClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveAnchorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".activity.LiveAddImpressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.VideoPlayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ChatRoomActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ChatChooseImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SystemMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveRecordPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FollowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveReportActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.MyProfitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RankListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ModifyPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible"/>
+
+        <activity android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible"/>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 腾讯bugly -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="01bff7e683" />
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="com.yunbao.liveanchor" />
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+        <!-- 腾讯bugly end-->
+
+    </application>
+
+</manifest>

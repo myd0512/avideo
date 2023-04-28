@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <TextView
+        android:id="@+id/view_live_game_winner_one_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bg_live_game_winner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:ems="16"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:text="恭喜用户名在一分六合彩中奖了" />
+</RelativeLayout>

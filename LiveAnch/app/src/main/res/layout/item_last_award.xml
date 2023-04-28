@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/last_ward_num"
+    android:layout_width="@dimen/margin_padding_15"
+    android:layout_height="@dimen/margin_padding_15"
+    android:layout_marginStart="@dimen/margin_padding_3"
+    android:includeFontPadding="false"
+    android:background="@drawable/bg_game_point_red"
+    android:textSize="10dp"
+    android:gravity="center"
+    android:textColor="@color/white" />

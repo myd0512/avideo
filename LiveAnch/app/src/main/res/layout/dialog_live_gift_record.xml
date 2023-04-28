@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/bg_dlg_gift_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/dialog_live_gift_record_close_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="17dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/srxq_xb_ico" />
+    <LinearLayout
+        android:id="@+id/dialog_live_gift_record_nav_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true" >
+        <TextView
+            android:id="@+id/dialog_live_gift_record_nav_game_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/gift_record_nav_checked"
+            android:text="游戏"/>
+        <TextView
+            android:id="@+id/dialog_live_gift_record_nav_gift_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:text="礼物"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dialog_live_gift_record_content_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/dialog_live_gift_record_nav_lay"/>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/conversion_head"
+                android:scaleType="fitXY"/>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/view_index_nav_mine_user_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_lr_padding"
+                android:layout_marginBottom="15dp"
+                android:src="@mipmap/default_head"
+                android:scaleType="centerCrop"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/view_index_nav_mine_user_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/view_index_nav_mine_user_iv"
+                android:layout_alignTop="@id/view_index_nav_mine_user_iv"
+                android:layout_alignBottom="@id/view_index_nav_mine_user_iv"
+                android:gravity="center_vertical"
+                android:textSize="14dp"
+                android:textColor="#333333"
+                android:text="名字" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/view_index_mine_user_lay"
+            style="@style/index_home_opt_lay_style">
+            <ImageView
+                style="@style/index_home_opt_left_iv_style"
+                android:src="@mipmap/ic_userinfo" />
+            <TextView
+                style="@style/index_home_opt_tv_style"
+                android:text="个人资料" />
+            <ImageView
+                style="@style/normal_more_right_iv_style" />
+        </LinearLayout>
+        <View
+            style="@style/index_home_opt_dv_style" />
+        <LinearLayout
+            android:id="@+id/view_index_mine_history_lay"
+            style="@style/index_home_opt_lay_style">
+            <ImageView
+                style="@style/index_home_opt_left_iv_style"
+                android:src="@mipmap/ic_kbls" />
+            <TextView
+                style="@style/index_home_opt_tv_style"
+                android:text="开播历史" />
+            <ImageView
+                style="@style/normal_more_right_iv_style" />
+        </LinearLayout>
+        <View
+            style="@style/index_home_opt_dv_style" />
+        <LinearLayout
+            android:id="@+id/view_index_mine_setting_lay"
+            style="@style/index_home_opt_lay_style">
+            <ImageView
+                style="@style/index_home_opt_left_iv_style"
+                android:src="@mipmap/ic_setting" />
+            <TextView
+                style="@style/index_home_opt_tv_style"
+                android:text="设置" />
+            <ImageView
+                style="@style/normal_more_right_iv_style" />
+        </LinearLayout>
+        <View
+            style="@style/index_home_opt_dv_style" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+<!--    activity 背景色-->
+    <color name="background">@color/gray2</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="shenfen">#f03a40</color>
+    <color name="fense">#EE6363</color>
+    <color name="gray3">#c8c8c8</color>
+
+    <color name="global">#EE6363</color>
+
+    <color name="gray1">#969696</color>
+    <color name="gray2">#f5f5f5</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="yellow">#EE6363</color>
+    <color name="yellow2">#EE6363</color>
+    <color name="textColor2">#646464</color>
+    <color name="red">#ff0000</color>
+    <color name="pk_red">#f03a40</color>
+    <color name="pk_blue">#2a92f7</color>
+    <color name="black1">#e6323232</color>
+    <color name="black">#000000</color>
+    <color name="danyin">#E3E3DE</color>
+    <color name="zise">#ff0e64</color>
+    <color name="zd">#f66a6f</color>
+    <color name="hs">#ECEC40</color>
+
+
+    <color name="rgb8421F4">#8421F4</color>
+    <color name="rgb262628">#262628</color>
+    <color name="rgb4C4842">#4C4842</color>
+    <color name="rgbDE5245">#DE5245</color>
+    <color name="rgb222222">#222222</color>
+    <color name="rgbFF6071">#FF6071</color>
+    <color name="rgbDC2D6E">#DC2D6E</color>
+    <color name="rgb1A0A3E">#1A0A3E</color>
+    <color name="rgb130c2c">#130c2c</color>
+    <color name="rgb1278F7">#1278F7</color>
+    <color name="rgb1779EF">#1779EF</color>
+    <color name="rgbE997C7">#E997C7</color>
+    <color name="rgbD692B0">#D692B0</color>
+    <color name="rgb61BC9F">#61BC9F</color>
+    <color name="rgbE49DC7">#E49DC7</color>
+
+    <color name="rgbDA540B">#DA540B</color>
+    <color name="rgbC5DB38">#C5DB38</color>
+    <color name="rgb0A61EE">#0A61EE</color>
+    <color name="rgb2B2B43">#2B2B43</color>
+    <color name="rgb027113">#027113</color>
+    <color name="rgb00BEFC">#00BEFC</color>
+    <color name="rgb1513FC">#1513FC</color>
+    <color name="rgb9BABE7">#9BABE7</color>
+    <color name="rgbD91C18">#D91C18</color>
+    <color name="rgb5A1011">#5A1011</color>
+    <color name="rgbCACFD5">#CACFD5</color>
+    <color name="rgbC1C2C4">#C1C2C4</color>
+    <color name="rgbBCBECB">#BCBECB</color>
+
+
+    <color name="textColor">#323232</color>
+    <color name="textColor_66">#666666</color>
+
+    <color name="color_normal_divider">#FAF9F9</color>
+
+<!--    首页-->
+<!--    开播时长-->
+    <color name="color_live_time">#EEBB00</color>
+<!--    我的收入-->
+    <color name="color_live_reward">#f03a40</color>
+
+    <color name="gift_record_nav_normal">#FFFFFF</color>
+    <color name="gift_record_nav_checked">#f03a40</color>
+
+<!--    我的钱包-->
+    <color name="color_wallet_nav_check">#FE0021</color>
+
+
+    <!--排行榜 nav 字体颜色-->
+    <color name="color_rank_list_nav_normal">#FFFFFF</color>
+    <color name="color_rank_list_nav_checked">#EE6363</color>
+    <drawable name="drawable_rank_list_nav_normal">#00FFFFFF</drawable>
+    <drawable name="drawable_rank_list_nav_mid">#FFFFFF</drawable>
+
+
+    <drawable name="drawable_transparent">#00FFFFFF</drawable>
+
+</resources>

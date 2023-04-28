@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/act_main_bot_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#F8F8F8">
+        <LinearLayout
+            android:id="@+id/act_main_bot_nav_home_lay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/act_main_bot_nav_home_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/tab_home_s" />
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:id="@+id/act_main_bot_nav_mine_lay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/act_main_bot_nav_mine_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/tab_mine" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/act_main_bot_lay"
+        android:background="#EEEEEE" />
+    <FrameLayout
+        android:id="@+id/act_main_content_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="1dp"
+        android:layout_above="@id/act_main_bot_lay"/>
+    <ImageView
+        android:id="@+id/act_main_bot_nav_start_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/bt_start_live" />
+</RelativeLayout>

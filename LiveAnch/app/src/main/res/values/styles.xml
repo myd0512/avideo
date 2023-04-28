@@ -1,0 +1,239 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/background</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme"/>
+
+
+    <style name="line2" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray2</item>
+    </style>
+
+
+    <style name="dialog" parent="AppTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!--显示区域以外是否使用黑色半透明背景-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog2" parent="AppTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--显示区域以外是否使用黑色半透明背景-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <style name="bottomToTopAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottomview_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottomview_anim_exit</item>
+    </style>
+
+
+    <style name="bottomToTopAnim2" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottomview_anim_enter_2</item>
+        <item name="android:windowExitAnimation">@anim/bottomview_anim_exit_2</item>
+    </style>
+
+    <style name="leftToRightAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/left_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/left_anim_exit</item>
+    </style>
+
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="main_menu_animStyle">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim</item>
+    </style>
+
+
+<!--    首页、个人中心 功能项样式-->
+    <style name="index_home_opt_lay_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">@dimen/normal_lr_padding</item>
+        <item name="android:paddingRight">@dimen/normal_lr_padding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="index_home_opt_left_iv_style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+    </style>
+    <style name="index_home_opt_tv_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+<!--    分割线-->
+    <style name="index_home_opt_dv_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginRight">@dimen/normal_lr_padding</item>
+        <item name="android:layout_marginLeft">47dp</item>
+        <item name="android:background">#F0F0F0</item>
+    </style>
+
+<!--    常用右箭头-->
+    <style name="normal_more_right_iv_style">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:src">@mipmap/icon_arrow_right</item>
+    </style>
+
+<!--    开播设置信息界面样式-->
+    <style name="live_init_item_lay_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">@dimen/normal_lr_padding</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="live_init_item_left_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="live_init_item_right_tv_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="live_init_item_right_ev_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="live_game_gift_record_tv_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+<!--    我的钱包-->
+    <style name="wallet_reward_lay_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="wallet_reward_tips_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/textColor_66</item>
+    </style>
+    <style name="wallet_reward_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+<!--    个人资料-->
+    <style name="edit_profile_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="edit_profile_left_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+    <style name="edit_profile_right_tv_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+</resources>
