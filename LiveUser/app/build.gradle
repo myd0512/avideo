@@ -119,4 +119,5 @@ dependencies {
     implementation 'com.google.zxing:core:3.2.1'
     //倒计时
     compile 'com.github.iwgang:countdownview:2.1.6'
+    implementation 'com.orhanobut:logger:2.2.0'
 }
