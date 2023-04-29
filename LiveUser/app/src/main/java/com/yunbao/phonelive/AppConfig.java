@@ -455,8 +455,8 @@ public class AppConfig {
                 setLevel(obj.getString("level"));
             }
         }
-        int size = mLevelMap.size();
-        if (mLevelMap == null || size == 0) {
+//        int size = mLevelMap.size();
+        if (mLevelMap == null || mLevelMap.size() == 0) {
             return null;
         }
         return mLevelMap.get(level);
