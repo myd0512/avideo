@@ -65,7 +65,7 @@
         </FrameLayout>
     </LinearLayout>
 
-    <com.yunbao.phonelive.custom.DrawableTextView
+    <com.yinjiee.ausers.custom.DrawableTextView
         android:id="@+id/location"
         android:layout_width="match_parent"
         android:layout_height="50dp"

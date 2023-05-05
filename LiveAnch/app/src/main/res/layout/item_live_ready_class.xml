@@ -38,7 +38,7 @@
         android:textSize="13sp"
         />
 
-    <com.yunbao.liveanchor.view.MyRadioButton
+    <com.fengtuan.videoanchor.view.MyRadioButton
         android:id="@+id/radioButton"
         android:layout_width="20dp"
         android:layout_height="20dp"

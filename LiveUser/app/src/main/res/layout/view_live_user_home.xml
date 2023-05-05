@@ -94,7 +94,7 @@
             android:background="@color/transparent"
             android:fadingEdge="none"
             app:elevation="0dp"
-            app:layout_behavior="com.yunbao.phonelive.custom.FixAppBarLayoutBehavior"
+            app:layout_behavior="com.yinjiee.ausers.custom.FixAppBarLayoutBehavior"
             >
 
             <LinearLayout
@@ -384,7 +384,7 @@
                     android:background="@color/gray2"
                     />
 
-                <com.yunbao.phonelive.custom.ViewPagerIndicator
+                <com.yinjiee.ausers.custom.ViewPagerIndicator
                     android:id="@+id/indicator"
                     android:layout_width="match_parent"
                     android:layout_height="43dp"
@@ -407,7 +407,7 @@
             </LinearLayout>
         </android.support.design.widget.AppBarLayout>
 
-        <com.yunbao.phonelive.custom.MyViewPager
+        <com.yinjiee.ausers.custom.MyViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

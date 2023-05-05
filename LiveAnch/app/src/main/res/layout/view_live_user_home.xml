@@ -94,7 +94,7 @@
             android:background="@color/transparent"
             android:fadingEdge="none"
             app:elevation="0dp"
-            app:layout_behavior="com.yunbao.liveanchor.view.FixAppBarLayoutBehavior"
+            app:layout_behavior="com.fengtuan.videoanchor.view.FixAppBarLayoutBehavior"
             >
 
             <LinearLayout
@@ -384,7 +384,7 @@
                     android:background="@color/gray2"
                     />
 
-                <com.yunbao.liveanchor.view.ViewPagerIndicator
+                <com.fengtuan.videoanchor.view.ViewPagerIndicator
                     android:id="@+id/indicator"
                     android:layout_width="match_parent"
                     android:layout_height="43dp"
@@ -407,7 +407,7 @@
             </LinearLayout>
         </android.support.design.widget.AppBarLayout>
 
-        <com.yunbao.liveanchor.view.MyViewPager
+        <com.fengtuan.videoanchor.view.MyViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

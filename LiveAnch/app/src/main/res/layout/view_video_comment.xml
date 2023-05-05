@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     >
 
-    <com.yunbao.liveanchor.view.MyLinearLayout3
+    <com.fengtuan.videoanchor.view.MyLinearLayout3
         android:id="@+id/bottom"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -50,7 +50,7 @@
             style="@style/line2"
             />
 
-        <com.yunbao.liveanchor.view.RefreshView
+        <com.fengtuan.videoanchor.view.RefreshView
             android:id="@+id/refreshView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -95,5 +95,5 @@
                 android:tint="@color/gray1"
                 />
         </LinearLayout>
-    </com.yunbao.liveanchor.view.MyLinearLayout3>
+    </com.fengtuan.videoanchor.view.MyLinearLayout3>
 </FrameLayout>

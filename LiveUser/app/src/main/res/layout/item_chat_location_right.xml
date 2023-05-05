@@ -75,7 +75,7 @@
 
         </FrameLayout>
 
-        <com.yunbao.phonelive.custom.BubbleLayout
+        <com.yinjiee.ausers.custom.BubbleLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="40dp"
@@ -123,7 +123,7 @@
                     />
 
 
-                <com.yunbao.phonelive.custom.MyRelativeLayout4
+                <com.yinjiee.ausers.custom.MyRelativeLayout4
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     >
@@ -144,11 +144,11 @@
                         android:src="@mipmap/icon_location_marker"
                         android:translationY="-5dp"
                         />
-                </com.yunbao.phonelive.custom.MyRelativeLayout4>
+                </com.yinjiee.ausers.custom.MyRelativeLayout4>
 
             </LinearLayout>
 
-        </com.yunbao.phonelive.custom.BubbleLayout>
+        </com.yinjiee.ausers.custom.BubbleLayout>
 
 
     </LinearLayout>

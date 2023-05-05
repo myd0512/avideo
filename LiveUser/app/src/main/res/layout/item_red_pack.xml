@@ -47,7 +47,7 @@
         android:orientation="vertical"
         >
 
-        <com.yunbao.phonelive.custom.MyImageView2
+        <com.yinjiee.ausers.custom.MyImageView2
             android:id="@+id/img"
             android:layout_width="20dp"
             android:layout_height="25dp"

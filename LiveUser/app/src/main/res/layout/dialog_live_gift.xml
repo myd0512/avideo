@@ -138,7 +138,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <com.yunbao.phonelive.custom.DrawableTextView
+                <com.yinjiee.ausers.custom.DrawableTextView
                     android:id="@+id/coin"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"

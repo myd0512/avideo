@@ -37,7 +37,7 @@
 <!--</android.support.design.widget.CoordinatorLayout>-->
 
 
-<com.yunbao.phonelive.custom.RefreshView
+<com.yinjiee.ausers.custom.RefreshView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/refreshView"

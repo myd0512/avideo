@@ -89,7 +89,7 @@
         android:layout_toRightOf="@id/group_1"
         android:overScrollMode="never" />
 
-    <com.yunbao.liveanchor.view.DrawableTextView2
+    <com.fengtuan.videoanchor.view.DrawableTextView2
         android:id="@+id/live_time"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -262,7 +262,7 @@
                 app:riv_border_width="@dimen/margin_padding_1"
                 app:riv_oval="true" />
 
-            <com.yunbao.liveanchor.view.StarView
+            <com.fengtuan.videoanchor.view.StarView
                 android:id="@+id/star"
                 android:layout_width="35dp"
                 android:layout_height="35dp"

@@ -7,6 +7,7 @@
     <string name="bonus_sign_1">已连续签到</string>
     <string name="bonus_day">天</string>
     <string name="beauty_init_error">美颜初始化异常，无法使用</string>
+    <string name="login_edit_info_tips_tv">填写资料\n提升自身魅力</string>
 
     <string name="cash">提现账户</string>
     <string name="cash_account_empty">您当前还没设置提现账户</string>

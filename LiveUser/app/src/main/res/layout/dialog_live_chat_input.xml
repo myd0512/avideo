@@ -36,7 +36,7 @@
         android:textSize="14sp" />
 
 
-    <com.yunbao.phonelive.custom.MyRadioButton
+    <com.yinjiee.ausers.custom.MyRadioButton
         android:id="@+id/btn_send"
         android:layout_width="48dp"
         android:layout_height="match_parent"

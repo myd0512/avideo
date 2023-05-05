@@ -30,7 +30,7 @@
         app:riv_oval="true"
         />
 
-    <com.yunbao.liveanchor.view.BubbleLayout
+    <com.fengtuan.videoanchor.view.BubbleLayout
         android:id="@+id/bubbleLayout"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -47,13 +47,13 @@
         app:bubbleRadius="5dp"
         >
 
-        <com.yunbao.liveanchor.view.ChatVoiceLayout
+        <com.fengtuan.videoanchor.view.ChatVoiceLayout
             android:id="@+id/voice"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             app:cvl_direction="left"
             />
-    </com.yunbao.liveanchor.view.BubbleLayout>
+    </com.fengtuan.videoanchor.view.BubbleLayout>
 
     <View
         android:id="@+id/red_point"

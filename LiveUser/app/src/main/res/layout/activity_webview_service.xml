@@ -22,7 +22,7 @@
             android:layout_alignParentBottom="true"
            />
 
-        <com.yunbao.phonelive.views.customWebView.x5webview.X5WebView
+        <com.yinjiee.ausers.views.customWebView.x5webview.X5WebView
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

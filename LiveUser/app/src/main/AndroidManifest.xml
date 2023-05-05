@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yunbao.phonelive">
+    package="com.yinjiee.ausers">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -34,13 +34,13 @@
 
 
     <application
-        android:name="AppContext"
+        android:name="com.yinjiee.ausers.AppContext"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.LauncherActivity"
+            android:name="com.yinjiee.ausers.activity.LauncherActivity"
             android:screenOrientation="portrait"
             android:theme="@style/launcher">
             <intent-filter>
@@ -51,197 +51,197 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.WebViewServiceActivity"
+            android:name="com.yinjiee.ausers.activity.WebViewServiceActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.WebViewPagerActivity"
+            android:name="com.yinjiee.ausers.activity.WebViewPagerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.yinjiee.ausers.activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.yinjiee.ausers.activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ActivityLoginNew"
+            android:name="com.yinjiee.ausers.activity.ActivityLoginNew"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ActivityLoginCode"
+            android:name="com.yinjiee.ausers.activity.ActivityLoginCode"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ActivityRegisterInviteCode"
+            android:name="com.yinjiee.ausers.activity.ActivityRegisterInviteCode"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ActivityRegisterEdit"
+            android:name="com.yinjiee.ausers.activity.ActivityRegisterEdit"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ActivitySetPass"
+            android:name="com.yinjiee.ausers.activity.ActivitySetPass"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name="com.yinjiee.ausers.activity.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ActivityRegisterNew"
+            android:name="com.yinjiee.ausers.activity.ActivityRegisterNew"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.FindPwdActivity"
+            android:name="com.yinjiee.ausers.activity.FindPwdActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ActivityGameTz"
+            android:name="com.yinjiee.ausers.activity.ActivityGameTz"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".activity.ActivityGameTzRecord"
+            android:name="com.yinjiee.ausers.activity.ActivityGameTzRecord"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.GameRecordListActivity"
+            android:name="com.yinjiee.ausers.activity.GameRecordListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.WebViewActivity"
+            android:name="com.yinjiee.ausers.activity.WebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.EditProfileActivity"
+            android:name="com.yinjiee.ausers.activity.EditProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.EditSexActivity"
+            android:name="com.yinjiee.ausers.activity.EditSexActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.EditNameActivity"
+            android:name="com.yinjiee.ausers.activity.EditNameActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.EditSignActivity"
+            android:name="com.yinjiee.ausers.activity.EditSignActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.FollowActivity"
+            android:name="com.yinjiee.ausers.activity.FollowActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.FansActivity"
+            android:name="com.yinjiee.ausers.activity.FansActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveRecordActivity"
+            android:name="com.yinjiee.ausers.activity.LiveRecordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SettingActivity"
+            android:name="com.yinjiee.ausers.activity.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ModifyPwdActivity"
+            android:name="com.yinjiee.ausers.activity.ModifyPwdActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveAnchorActivity"
+            android:name="com.yinjiee.ausers.activity.LiveAnchorActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".activity.LiveAudienceActivity"
+            android:name="com.yinjiee.ausers.activity.LiveAudienceActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".activity.LiveChooseClassActivity"
+            android:name="com.yinjiee.ausers.activity.LiveChooseClassActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveAddImpressActivity"
+            android:name="com.yinjiee.ausers.activity.LiveAddImpressActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.MyImpressActivity"
+            android:name="com.yinjiee.ausers.activity.MyImpressActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.UserHomeActivity"
+            android:name="com.yinjiee.ausers.activity.UserHomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveContributeActivity"
+            android:name="com.yinjiee.ausers.activity.LiveContributeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveReportActivity"
+            android:name="com.yinjiee.ausers.activity.LiveReportActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
-            android:name=".activity.MyProfitActivity"
+            android:name="com.yinjiee.ausers.activity.MyProfitActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.CashActivity"
+            android:name="com.yinjiee.ausers.activity.CashActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.MyCoinActivity"
+            android:name="com.yinjiee.ausers.activity.MyCoinActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ChatActivity"
+            android:name="com.yinjiee.ausers.activity.ChatActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ChatRoomActivity"
+            android:name="com.yinjiee.ausers.activity.ChatRoomActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".activity.SearchActivity"
+            android:name="com.yinjiee.ausers.activity.SearchActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveClassActivity"
+            android:name="com.yinjiee.ausers.activity.LiveClassActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveRecordPlayActivity"
+            android:name="com.yinjiee.ausers.activity.LiveRecordPlayActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LoginInvalidActivity"
+            android:name="com.yinjiee.ausers.activity.LoginInvalidActivity"
             android:theme="@style/dialog2" />
         <activity
-            android:name=".activity.RecommendActivity"
+            android:name="com.yinjiee.ausers.activity.RecommendActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ChatChooseImageActivity"
+            android:name="com.yinjiee.ausers.activity.ChatChooseImageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LocationActivity"
+            android:name="com.yinjiee.ausers.activity.LocationActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveGuardListActivity"
+            android:name="com.yinjiee.ausers.activity.LiveGuardListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SystemMessageActivity"
+            android:name="com.yinjiee.ausers.activity.SystemMessageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.VideoPlayActivity"
+            android:name="com.yinjiee.ausers.activity.VideoPlayActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
-            android:name=".activity.VideoRecordActivity"
+            android:name="com.yinjiee.ausers.activity.VideoRecordActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
-            android:name=".activity.VideoEditActivity"
+            android:name="com.yinjiee.ausers.activity.VideoEditActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.VideoPublishActivity"
+            android:name="com.yinjiee.ausers.activity.VideoPublishActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.VideoChooseActivity"
+            android:name="com.yinjiee.ausers.activity.VideoChooseActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.VideoReportActivity"
+            android:name="com.yinjiee.ausers.activity.VideoReportActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
-            android:name=".activity.MyVideoActivity"
+            android:name="com.yinjiee.ausers.activity.MyVideoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ErrorActivity"
+            android:name="com.yinjiee.ausers.activity.ErrorActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.TzDetailActivity"
+            android:name="com.yinjiee.ausers.activity.TzDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ActivityExtension"
+            android:name="com.yinjiee.ausers.activity.ActivityExtension"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait" />
         <!--微信登录回调页面-->
         <activity
-            android:name=".wxapi.WXEntryActivity"
+            android:name="com.yinjiee.ausers.wxapi.WXEntryActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!--微信支付回调页面-->
         <activity
-            android:name=".wxapi.WXPayEntryActivity"
+            android:name="com.yinjiee.ausers.wxapi.WXPayEntryActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
@@ -291,7 +291,7 @@
 
         <!--极光推送-->
         <receiver
-            android:name=".im.JPushReceiver"
+            android:name="com.yinjiee.ausers.im.JPushReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>

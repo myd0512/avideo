@@ -44,7 +44,7 @@
         android:layout_marginBottom="5dp"
         />
 
-    <com.yunbao.liveanchor.view.DrawableTextView2
+    <com.fengtuan.videoanchor.view.DrawableTextView2
         android:id="@+id/btn_expand"
         android:layout_width="wrap_content"
         android:layout_height="30dp"

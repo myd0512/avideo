@@ -3,7 +3,7 @@
 
     <!--接三方的时候,修改这里的包名-->
     <permission
-        android:name="com.yunbao.liveanchor.permission.JPUSH_MESSAGE"
+        android:name="com.fengtuan.videoanchor.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature" />
 
     <!--接三方的时候,修改这里的包名-->
@@ -80,17 +80,17 @@
 
         <provider
             android:name="cn.jpush.android.service.DataProvider"
-            android:authorities="com.yunbao.liveanchor.DataProvider"
+            android:authorities="com.fengtuan.videoanchor.DataProvider"
             android:exported="true" />
 
         <provider
             android:name="cn.jpush.im.android.helpers.ipc.IMProvider"
-            android:authorities="com.yunbao.liveanchor.IMProvider"
+            android:authorities="com.fengtuan.videoanchor.IMProvider"
             android:exported="false" />
 
         <provider
             android:name="cn.jpush.android.service.DownloadProvider"
-            android:authorities="com.yunbao.liveanchor.DownloadProvider"
+            android:authorities="com.fengtuan.videoanchor.DownloadProvider"
             android:exported="true" />
 
 
@@ -100,6 +100,6 @@
         <!--接三方的时候,修改这里的APP_KEY-->
         <meta-data
             android:name="JPUSH_APPKEY"
-            android:value="5646e8abe5ee99f5493fa103" />
+            android:value="32fbef2946263c94a30d833f" />
     </application>
 </manifest>

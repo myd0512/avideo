@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="1dp">
-        <com.yunbao.phonelive.custom.RefreshLayout
+        <com.yinjiee.ausers.custom.RefreshLayout
             android:id="@+id/act_game_record_refresh_lay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:overScrollMode="never"/>
-        </com.yunbao.phonelive.custom.RefreshLayout>
+        </com.yinjiee.ausers.custom.RefreshLayout>
         <TextView
             android:id="@+id/tv_no_data"
             android:layout_width="wrap_content"

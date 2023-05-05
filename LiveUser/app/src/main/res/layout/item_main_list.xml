@@ -86,7 +86,7 @@
         android:layout_alignBottom="@id/votes"
         android:src="@mipmap/ic_main_rank_list_gift" />
 
-    <com.yunbao.phonelive.custom.MyRadioButton
+    <com.yinjiee.ausers.custom.MyRadioButton
         android:id="@+id/btn_follow"
         android:layout_width="44dp"
         android:layout_height="20dp"

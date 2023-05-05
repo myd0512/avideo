@@ -6,7 +6,7 @@
                 android:padding="15dp"
     >
 
-    <com.yunbao.phonelive.custom.SquareRoundedImageView
+    <com.yinjiee.ausers.custom.SquareRoundedImageView
         android:id="@+id/avatar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -14,7 +14,7 @@
         app:riv_oval="true"
         />
 
-    <com.yunbao.phonelive.custom.MyRadioButton
+    <com.yinjiee.ausers.custom.MyRadioButton
         android:id="@+id/radioButton"
         android:layout_width="24dp"
         android:layout_height="24dp"

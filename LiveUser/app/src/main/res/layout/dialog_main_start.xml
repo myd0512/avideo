@@ -13,7 +13,7 @@
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
 
-        <com.yunbao.phonelive.custom.DrawableTextView
+        <com.yinjiee.ausers.custom.DrawableTextView
             android:id="@+id/btn_live"
             android:layout_width="@dimen/margin_padding_60"
             android:layout_height="@dimen/margin_padding_80"
@@ -26,7 +26,7 @@
             app:dt_top_height="@dimen/margin_padding_60"
             app:dt_top_width="@dimen/margin_padding_60" />
 
-        <com.yunbao.phonelive.custom.DrawableTextView
+        <com.yinjiee.ausers.custom.DrawableTextView
             android:id="@+id/btn_video"
             android:layout_width="@dimen/margin_padding_60"
             android:layout_height="@dimen/margin_padding_80"

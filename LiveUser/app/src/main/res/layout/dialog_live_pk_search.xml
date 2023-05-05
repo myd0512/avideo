@@ -62,7 +62,7 @@
         style="@style/line2"
         />
 
-    <com.yunbao.phonelive.custom.RefreshView
+    <com.yinjiee.ausers.custom.RefreshView
         android:id="@+id/refreshView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

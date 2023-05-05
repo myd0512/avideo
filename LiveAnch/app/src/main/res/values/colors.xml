@@ -3,15 +3,15 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-
+    <color name="color_normal_dv">#EFEFEF</color>
 <!--    activity 背景色-->
     <color name="background">@color/gray2</color>
-
+    <color name="textColor99">#999999</color>
     <color name="white">#FFFFFF</color>
     <color name="shenfen">#f03a40</color>
     <color name="fense">#EE6363</color>
     <color name="gray3">#c8c8c8</color>
-
+    <color name="textColor0">#000000</color>
     <color name="global">#EE6363</color>
 
     <color name="gray1">#969696</color>
@@ -31,7 +31,7 @@
     <color name="zd">#f66a6f</color>
     <color name="hs">#ECEC40</color>
 
-
+    <color name="color_btn_red">#ED4230</color>
     <color name="rgb8421F4">#8421F4</color>
     <color name="rgb262628">#262628</color>
     <color name="rgb4C4842">#4C4842</color>

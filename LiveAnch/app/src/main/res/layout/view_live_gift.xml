@@ -16,7 +16,7 @@
         android:translationX="-400dp"
         >
 
-        <com.yunbao.liveanchor.view.RatioImageView
+        <com.fengtuan.videoanchor.view.RatioImageView
             android:layout_width="240dp"
             android:layout_height="0dp"
             android:layout_alignParentBottom="true"
@@ -68,7 +68,7 @@
             />
     </RelativeLayout>
 
-    <com.yunbao.liveanchor.view.MyFrameLayout2
+    <com.fengtuan.videoanchor.view.MyFrameLayout2
         android:id="@+id/group_2"
         android:layout_width="70dp"
         android:layout_height="0dp"
@@ -89,5 +89,5 @@
             />
 
 
-    </com.yunbao.liveanchor.view.MyFrameLayout2>
+    </com.fengtuan.videoanchor.view.MyFrameLayout2>
 </RelativeLayout>

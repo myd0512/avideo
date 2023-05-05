@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:clipChildren="false">
 
-    <com.yunbao.phonelive.custom.MyViewPager
+    <com.yinjiee.ausers.custom.MyViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,13 +21,13 @@
         android:background="@color/white" >
 <!--        android:background="@mipmap/menu_bg">-->
 
-        <com.yunbao.phonelive.custom.TabButtonGroup
+        <com.yinjiee.ausers.custom.TabButtonGroup
             android:id="@+id/tab_group"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <com.yunbao.phonelive.custom.TabButton
+            <com.yinjiee.ausers.custom.TabButton
                 android:layout_width="@dimen/margin_padding_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -39,7 +39,7 @@
                 app:tbn_tip="@string/main_home"
                 app:tbn_unselected_icon="@mipmap/icon_main_home_0" />
 
-            <com.yunbao.phonelive.custom.TabButton
+            <com.yinjiee.ausers.custom.TabButton
                 android:layout_width="@dimen/margin_padding_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -51,7 +51,7 @@
                 app:tbn_unselected_icon="@mipmap/icon_main_near_0" />
 <!--            android:layout_marginEnd="@dimen/margin_padding_60"-->
 
-            <com.yunbao.phonelive.custom.TabButton
+            <com.yinjiee.ausers.custom.TabButton
                 android:layout_width="@dimen/margin_padding_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -61,7 +61,7 @@
                 app:tbn_text_size="@dimen/text_12"
                 app:tbn_tip="@string/main_list"
                 app:tbn_unselected_icon="@mipmap/icon_main_list_0" />
-            <com.yunbao.phonelive.custom.TabButton
+            <com.yinjiee.ausers.custom.TabButton
                 android:layout_width="@dimen/margin_padding_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -72,7 +72,7 @@
                 app:tbn_tip="@string/main_niuren"
                 app:tbn_unselected_icon="@mipmap/icon_main_niuren_0" />
 
-            <com.yunbao.phonelive.custom.TabButton
+            <com.yinjiee.ausers.custom.TabButton
                 android:layout_width="@dimen/margin_padding_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -83,7 +83,7 @@
                 app:tbn_tip="@string/main_me"
                 app:tbn_unselected_icon="@mipmap/icon_main_me_0" />
 
-        </com.yunbao.phonelive.custom.TabButtonGroup>
+        </com.yinjiee.ausers.custom.TabButtonGroup>
 
         <ImageView
             android:id="@+id/btn_start"

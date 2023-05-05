@@ -30,7 +30,7 @@
                 app:riv_corner_radius="4dp"
                 />
 
-            <com.yunbao.phonelive.custom.MyImageView2
+            <com.yinjiee.ausers.custom.MyImageView2
                 android:id="@+id/btn_play"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -84,7 +84,7 @@
             />
     </LinearLayout>
 
-    <com.yunbao.phonelive.custom.RatioImageView
+    <com.yinjiee.ausers.custom.RatioImageView
         android:id="@+id/btn_use"
         android:layout_width="match_parent"
         android:layout_height="0dp"

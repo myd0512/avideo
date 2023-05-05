@@ -20,13 +20,13 @@
         android:layout_marginTop="130dp"
         >
 
-        <com.yunbao.phonelive.custom.MyFrameLayout4
+        <com.yinjiee.ausers.custom.MyFrameLayout4
             android:id="@+id/left_container"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             />
 
-        <com.yunbao.phonelive.custom.MyFrameLayout4
+        <com.yinjiee.ausers.custom.MyFrameLayout4
             android:id="@+id/right_container"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -36,7 +36,7 @@
     </FrameLayout>
 
 
-    <com.yunbao.phonelive.custom.MyFrameLayout3
+    <com.yinjiee.ausers.custom.MyFrameLayout3
         android:id="@+id/small_container"
         android:layout_width="0dp"
         android:layout_height="0dp"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.yunbao.phonelive.custom.MyFrameLayout2
+<com.yinjiee.ausers.custom.MyFrameLayout2
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -10,7 +10,7 @@
     app:mfl_ratio="0.973"
     >
 
-    <com.yunbao.phonelive.custom.RatioImageView
+    <com.yinjiee.ausers.custom.RatioImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
@@ -19,7 +19,7 @@
         app:ri_ratio="0.973"
         />
 
-    <com.yunbao.phonelive.custom.MyRelativeLayout2
+    <com.yinjiee.ausers.custom.MyRelativeLayout2
         android:id="@+id/item_1"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -101,7 +101,7 @@
                 android:textSize="12sp"
                 />
 
-            <com.yunbao.phonelive.custom.MyRadioButton
+            <com.yinjiee.ausers.custom.MyRadioButton
                 android:id="@+id/btn_follow_1"
                 android:layout_width="44dp"
                 android:layout_height="20dp"
@@ -126,9 +126,9 @@
             android:src="@mipmap/icon_main_list_medal_1"
             />
 
-    </com.yunbao.phonelive.custom.MyRelativeLayout2>
+    </com.yinjiee.ausers.custom.MyRelativeLayout2>
 
-    <com.yunbao.phonelive.custom.MyRelativeLayout2
+    <com.yinjiee.ausers.custom.MyRelativeLayout2
         android:id="@+id/item_2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -212,7 +212,7 @@
                 android:textSize="12sp"
                 />
 
-            <com.yunbao.phonelive.custom.MyRadioButton
+            <com.yinjiee.ausers.custom.MyRadioButton
                 android:id="@+id/btn_follow_2"
                 android:layout_width="44dp"
                 android:layout_height="20dp"
@@ -262,9 +262,9 @@
             android:adjustViewBounds="true"
             android:src="@mipmap/icon_main_list_medal_2"
             />
-    </com.yunbao.phonelive.custom.MyRelativeLayout2>
+    </com.yinjiee.ausers.custom.MyRelativeLayout2>
 
-    <com.yunbao.phonelive.custom.MyRelativeLayout2
+    <com.yinjiee.ausers.custom.MyRelativeLayout2
         android:id="@+id/item_3"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -349,7 +349,7 @@
                 android:textSize="12sp"
                 />
 
-            <com.yunbao.phonelive.custom.MyRadioButton
+            <com.yinjiee.ausers.custom.MyRadioButton
                 android:id="@+id/btn_follow_3"
                 android:layout_width="44dp"
                 android:layout_height="20dp"
@@ -400,5 +400,5 @@
             android:src="@mipmap/icon_main_list_medal_3"
             />
 
-    </com.yunbao.phonelive.custom.MyRelativeLayout2>
-</com.yunbao.phonelive.custom.MyFrameLayout2>
+    </com.yinjiee.ausers.custom.MyRelativeLayout2>
+</com.yinjiee.ausers.custom.MyFrameLayout2>

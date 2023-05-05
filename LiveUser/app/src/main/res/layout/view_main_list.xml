@@ -19,7 +19,7 @@
         android:layout_height="110dp"
         >
 
-        <com.yunbao.phonelive.custom.RatioImageView
+        <com.yinjiee.ausers.custom.RatioImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
@@ -27,7 +27,7 @@
             app:ri_ratio="0.973"
             />
 
-        <com.yunbao.phonelive.custom.ViewPagerIndicator
+        <com.yinjiee.ausers.custom.ViewPagerIndicator
             android:id="@+id/indicator"
             android:layout_width="140dp"
             android:layout_height="match_parent"
@@ -46,7 +46,7 @@
             app:visibleItemCount="2"
             />
 
-        <com.yunbao.phonelive.custom.MyLinearLayout1
+        <com.yinjiee.ausers.custom.MyLinearLayout1
             android:id="@+id/radio_group_wrap"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -54,7 +54,7 @@
             android:orientation="horizontal"
             >
 
-            <com.yunbao.phonelive.custom.MyFrameLayout1
+            <com.yinjiee.ausers.custom.MyFrameLayout1
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 >
@@ -124,9 +124,9 @@
 
                 </RadioGroup>
 
-            </com.yunbao.phonelive.custom.MyFrameLayout1>
+            </com.yinjiee.ausers.custom.MyFrameLayout1>
 
-            <com.yunbao.phonelive.custom.MyFrameLayout1
+            <com.yinjiee.ausers.custom.MyFrameLayout1
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 >
@@ -195,9 +195,9 @@
                         />
 
                 </RadioGroup>
-            </com.yunbao.phonelive.custom.MyFrameLayout1>
+            </com.yinjiee.ausers.custom.MyFrameLayout1>
 
-        </com.yunbao.phonelive.custom.MyLinearLayout1>
+        </com.yinjiee.ausers.custom.MyLinearLayout1>
     </FrameLayout>
 
 </FrameLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.yunbao.liveanchor">
+    package="com.fengtuan.videoanchor">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -31,7 +31,7 @@
 
 
     <application
-        android:name="AppContext"
+        android:name="com.fengtuan.videoanchor.AppContext"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -50,94 +50,102 @@
         </provider>
 
 
-        <activity android:name=".activity.LauncherActivity">
+        <activity android:name="com.fengtuan.videoanchor.activity.LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginActivity"
+        <activity android:name="com.fengtuan.videoanchor.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateVisible"/>
         <activity
-            android:name=".activity.LoginInvalidActivity"
+            android:name="com.fengtuan.videoanchor.activity.LoginInvalidActivity"
             android:theme="@style/dialog2" />
-        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".activity.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fengtuan.videoanchor.activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fengtuan.videoanchor.activity.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.fengtuan.videoanchor.activity.ActivityRegisterNew"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.fengtuan.videoanchor.ActivityLoginCode"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.fengtuan.videoanchor.activity.ActivityRegisterEdit"
+            android:screenOrientation="portrait"/>
 
-
-        <activity android:name=".activity.LiveInitActivity"
+        <activity android:name="com.fengtuan.videoanchor.activity.LiveInitActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity
-            android:name=".activity.LiveChooseClassActivity"
+            android:name="com.fengtuan.videoanchor.activity.LiveChooseClassActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveAnchorActivity"
+            android:name="com.fengtuan.videoanchor.activity.LiveAnchorActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".activity.LiveAddImpressActivity"
+            android:name="com.fengtuan.videoanchor.activity.LiveAddImpressActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.VideoReportActivity"
+            android:name="com.fengtuan.videoanchor.activity.VideoReportActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
-            android:name=".activity.VideoPlayActivity"
+            android:name="com.fengtuan.videoanchor.activity.VideoPlayActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
-            android:name=".activity.ChatRoomActivity"
+            android:name="com.fengtuan.videoanchor.activity.ChatRoomActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
-            android:name=".activity.ChatChooseImageActivity"
+            android:name="com.fengtuan.videoanchor.activity.ChatChooseImageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SystemMessageActivity"
+            android:name="com.fengtuan.videoanchor.activity.SystemMessageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveRecordPlayActivity"
+            android:name="com.fengtuan.videoanchor.activity.LiveRecordPlayActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.FollowActivity"
+            android:name="com.fengtuan.videoanchor.activity.FollowActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.FansActivity"
+            android:name="com.fengtuan.videoanchor.activity.FansActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.UserHomeActivity"
+            android:name="com.fengtuan.videoanchor.activity.UserHomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveReportActivity"
+            android:name="com.fengtuan.videoanchor.activity.LiveReportActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".activity.MyProfitActivity"
+            android:name="com.fengtuan.videoanchor.activity.MyProfitActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.CashActivity"
+            android:name="com.fengtuan.videoanchor.activity.CashActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.RankListActivity"
+            android:name="com.fengtuan.videoanchor.activity.RankListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LiveHistoryActivity"
+            android:name="com.fengtuan.videoanchor.activity.LiveHistoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SettingActivity"
+            android:name="com.fengtuan.videoanchor.activity.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ModifyPwdActivity"
+            android:name="com.fengtuan.videoanchor.activity.ModifyPwdActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateVisible"/>
 
-        <activity android:name=".activity.EditProfileActivity"
+        <activity android:name="com.fengtuan.videoanchor.activity.EditProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.EditUserInfoActivity"
+            android:name="com.fengtuan.videoanchor.activity.EditUserInfoActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateVisible"/>
 

@@ -6,7 +6,7 @@
     android:layout_height="250dp"
     >
 
-    <com.yunbao.phonelive.custom.FrameImageView
+    <com.yinjiee.ausers.custom.FrameImageView
         android:id="@+id/frame_img"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,7 +15,7 @@
         app:fiv_ratio="0.213"
         />
 
-    <com.yunbao.phonelive.custom.PkProgressBar
+    <com.yinjiee.ausers.custom.PkProgressBar
         android:id="@+id/progressbar"
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -82,7 +82,7 @@
         android:layout_centerInParent="true"
         />
 
-    <com.yunbao.phonelive.custom.ProgressTextView2
+    <com.yinjiee.ausers.custom.ProgressTextView2
         android:id="@+id/pk_wait_progress"
         android:layout_width="70dp"
         android:layout_height="0dp"

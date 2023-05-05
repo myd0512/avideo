@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 >
 
-                <com.yunbao.phonelive.custom.DrawableTextView
+                <com.yinjiee.ausers.custom.DrawableTextView
                     android:id="@+id/price_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
                 android:layout_marginLeft="10dp"
                 >
 
-                <com.yunbao.phonelive.custom.DrawableTextView
+                <com.yinjiee.ausers.custom.DrawableTextView
                     android:id="@+id/price_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
                 android:layout_marginLeft="10dp"
                 >
 
-                <com.yunbao.phonelive.custom.DrawableTextView
+                <com.yinjiee.ausers.custom.DrawableTextView
                     android:id="@+id/price_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
             android:textSize="14sp"
             />
 
-        <com.yunbao.phonelive.custom.DrawableTextView
+        <com.yinjiee.ausers.custom.DrawableTextView
             android:id="@+id/coin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

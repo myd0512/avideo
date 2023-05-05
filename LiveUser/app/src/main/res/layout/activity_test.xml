@@ -13,7 +13,7 @@
         android:background="@color/transparent"
         android:fadingEdge="none"
         app:elevation="0dp"
-        app:layout_behavior="com.yunbao.phonelive.custom.FixAppBarLayoutBehavior"
+        app:layout_behavior="com.yinjiee.ausers.custom.FixAppBarLayoutBehavior"
         >
 
         <FrameLayout

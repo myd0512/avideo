@@ -17,7 +17,7 @@
         android:textSize="13dp"
         android:textColor="@color/textColor"
         android:text="开播历史，只展示近30天的数据"/>
-    <com.yunbao.liveanchor.view.RefreshView
+    <com.fengtuan.videoanchor.view.RefreshView
         android:id="@+id/refreshView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

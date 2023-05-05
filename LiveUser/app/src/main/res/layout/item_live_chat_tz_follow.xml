@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <com.yunbao.phonelive.views.DrawableTextView
+    <com.yinjiee.ausers.views.DrawableTextView
         android:id="@+id/tv_tz_follow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

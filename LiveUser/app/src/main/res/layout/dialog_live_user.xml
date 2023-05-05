@@ -139,7 +139,7 @@
             android:background="@color/gray2"
             />
 
-        <com.yunbao.phonelive.custom.DrawableTextView
+        <com.yinjiee.ausers.custom.DrawableTextView
             android:id="@+id/city"
             android:layout_width="0dp"
             android:layout_height="match_parent"

@@ -61,7 +61,7 @@
             android:visibility="invisible" />
     </RelativeLayout>
 
-    <com.yunbao.phonelive.custom.MyViewPager
+    <com.yinjiee.ausers.custom.MyViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

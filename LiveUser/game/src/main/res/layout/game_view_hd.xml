@@ -33,7 +33,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1">
 
-                <com.yunbao.game.custom.PokerView
+                <com.yinjiee.game.custom.PokerView
                     android:id="@+id/pokers_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -72,7 +72,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_weight="1">
 
-                <com.yunbao.game.custom.PokerView
+                <com.yinjiee.game.custom.PokerView
                     android:id="@+id/pokers_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -128,7 +128,7 @@
                     android:adjustViewBounds="true"
                     android:src="@mipmap/icon_hd_role_left" />
 
-                <com.yunbao.game.custom.GameBetCoinView
+                <com.yinjiee.game.custom.GameBetCoinView
                     android:id="@+id/score_1"
                     android:layout_width="50dp"
                     android:layout_height="70dp"
@@ -151,7 +151,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_weight="1">
 
-                <com.yunbao.game.custom.GameBetCoinView
+                <com.yinjiee.game.custom.GameBetCoinView
                     android:id="@+id/score_2"
                     android:layout_width="50dp"
                     android:layout_height="70dp"
@@ -172,7 +172,7 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <com.yunbao.game.custom.GameBetCoinView
+                <com.yinjiee.game.custom.GameBetCoinView
                     android:id="@+id/score_3"
                     android:layout_width="50dp"
                     android:layout_height="70dp"

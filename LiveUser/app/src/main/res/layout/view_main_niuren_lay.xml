@@ -18,7 +18,7 @@
             android:text="牛人"/>
     </RelativeLayout>
 
-    <com.yunbao.phonelive.custom.RefreshLayout
+    <com.yinjiee.ausers.custom.RefreshLayout
         android:id="@+id/view_main_niuren_refresh_lay"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -27,5 +27,5 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:overScrollMode="never"/>
-    </com.yunbao.phonelive.custom.RefreshLayout>
+    </com.yinjiee.ausers.custom.RefreshLayout>
 </LinearLayout>

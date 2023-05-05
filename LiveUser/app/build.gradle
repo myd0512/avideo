@@ -16,7 +16,7 @@ android {
         useNewCruncher = false
     }
     defaultConfig {
-        applicationId "com.yunbao.phonelive"
+        applicationId "com.yinjiee.anusers"
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
