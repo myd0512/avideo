@@ -89,7 +89,7 @@
         <activity
             android:name="com.yinjiee.ausers.activity.ActivityGameTz"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
         <activity
             android:name="com.yinjiee.ausers.activity.ActivityGameTzRecord"
             android:screenOrientation="portrait" />

@@ -228,9 +228,11 @@ public class ActivityGameTz extends AbsActivity implements View.OnClickListener,
             @Override
             public void onFocusChange(View view, boolean b) {
                 if (b){
-                    mIsSoftShow = true ;showChipView() ;
+                    mIsSoftShow = true ;
+                    showChipView() ;
                 }else{
-                    mIsSoftShow = false ;showChipView() ;
+                    mIsSoftShow = false ;
+                    showChipView() ;
                 }
             }
         });
@@ -801,6 +803,8 @@ public class ActivityGameTz extends AbsActivity implements View.OnClickListener,
      * 提交选择
      */
     private void submitCheck(){
+        mChipCountEv.clearFocus();
+
         if(timeSec <= HttpConsts.GAME_STOP_IN_TIME){
             ToastUtil.show(WordUtil.getString(R.string.game_tz_fail_tips));
             return;
@@ -809,6 +813,8 @@ public class ActivityGameTz extends AbsActivity implements View.OnClickListener,
 
         List<OptionBean> optionBeans = new ArrayList<>() ;
         if(0 == curItem){
+            if (mOptionList1 == null)
+                return;
             optionBeans.addAll(mOptionList1) ;
         }else if(1 == curItem){
             optionBeans.addAll(mOptionList2) ;

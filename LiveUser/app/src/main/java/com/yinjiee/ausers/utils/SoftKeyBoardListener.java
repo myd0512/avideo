@@ -5,6 +5,8 @@ import android.graphics.Rect;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
+import com.yinjiee.ausers.log;
+
 /**
  * author liangweidong
  * <p>
@@ -40,6 +42,7 @@ public  class SoftKeyBoardListener {
 
                 //根视图显示高度变小超过200，可以看作软键盘显示了
                 if (rootViewVisibleHeight - visibleHeight > rootView.getHeight()/4) {
+                    log.e("根视图显示高度变小超过200");
                     if (onSoftKeyBoardChangeListener != null) {
                         onSoftKeyBoardChangeListener.keyBoardShow(rootViewVisibleHeight - visibleHeight);
                     }
@@ -49,6 +52,7 @@ public  class SoftKeyBoardListener {
 
                 //根视图显示高度变大超过200，可以看作软键盘隐藏了
                 if (visibleHeight - rootViewVisibleHeight > rootView.getHeight()/4) {
+                    log.e("根视图显示高度变大超过200  ---?");
                     if (onSoftKeyBoardChangeListener != null) {
                         onSoftKeyBoardChangeListener.keyBoardHide(visibleHeight - rootViewVisibleHeight);
                     }
