@@ -45,6 +45,7 @@ import com.yinjiee.ausers.http.HttpConsts;
 import com.yinjiee.ausers.http.HttpUtil;
 import com.yinjiee.ausers.interfaces.OnRvClickListener;
 import com.yinjiee.ausers.keyboard.KeyboardHeightObserver;
+import com.yinjiee.ausers.log;
 import com.yinjiee.ausers.socket.JWebSocketClient;
 import com.yinjiee.ausers.socket.SocketGameReceiveBean;
 import com.yinjiee.ausers.utils.ClickUtil;
@@ -223,18 +224,28 @@ public class ActivityGameTz extends AbsActivity implements View.OnClickListener,
 
         initChipPop() ;
 
-        SoftKeyBoardListener.setListener(this, new SoftKeyBoardListener.OnSoftKeyBoardChangeListener() {
+        mChipCountEv.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-            public void keyBoardShow(int height) {
-                mIsSoftShow = true ;
-                showChipView() ;
-            }
-            @Override
-            public void keyBoardHide(int height) {
-                mIsSoftShow = false ;
-                showChipView() ;
+            public void onFocusChange(View view, boolean b) {
+                if (b){
+                    mIsSoftShow = true ;showChipView() ;
+                }else{
+                    mIsSoftShow = false ;showChipView() ;
+                }
             }
         });
+//        SoftKeyBoardListener.setListener(this, new SoftKeyBoardListener.OnSoftKeyBoardChangeListener() {
+//            @Override
+//            public void keyBoardShow(int height) {
+//                mIsSoftShow = true ;
+//                showChipView() ;
+//            }
+//            @Override
+//            public void keyBoardHide(int height) {
+//                mIsSoftShow = false ;
+//                showChipView() ;
+//            }
+//        });
 
 
 
@@ -562,6 +573,7 @@ public class ActivityGameTz extends AbsActivity implements View.OnClickListener,
      * 显示、隐藏筹码布局
      */
     public void showChipView(){
+
         if(mIsSoftShow){
             showChipPop() ;
         }else{
