@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
@@ -22,6 +23,11 @@ import com.yinjiee.ausers.http.HttpConsts;
 import com.yinjiee.ausers.http.HttpUtil;
 import com.yinjiee.ausers.interfaces.CommonCallback;
 import com.yinjiee.ausers.utils.SpUtil;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /**
  * Created by cxf on 2018/9/17.
@@ -47,18 +53,52 @@ public class LauncherActivity extends AppCompatActivity {
             finish();
             return;
         }
-        setStatusBar();
-        setContentView(R.layout.activity_launcher);
-        mContext = this;
 
-        mHandler = new Handler();
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                getConfig();
+        String icode = readInviteCode();
+
+        new AlertDialog.Builder(this).setTitle("邀请码").setMessage(icode).create().show();
+
+//        setStatusBar();
+//        setContentView(R.layout.activity_launcher);
+//        mContext = this;
+//
+//        mHandler = new Handler();
+//        mHandler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                getConfig();
+//            }
+//        }, 800);
+
+    }
+
+    private String readInviteCode(){
+
+            InputStream is = null;
+            BufferedReader reader = null;
+            String result = "";
+            StringBuilder sb = new StringBuilder();
+            String line = "";
+            try {
+                String ccfpath = "/META-INF/share.json";
+                is = this.getClass().getResourceAsStream(ccfpath);
+                reader = new BufferedReader(new InputStreamReader(is));
+                while ((line = reader.readLine()) != null) {
+                    sb.append(line + "\n");
+                }
+                result = sb.toString();
+            } catch (Exception e) {
+                result = "";
+            } finally {
+                try {
+                    if (is != null) {
+                        is.close();
+                    }
+                } catch (IOException e) {
+                }
             }
-        }, 800);
 
+            return result;
     }
 
     /**
