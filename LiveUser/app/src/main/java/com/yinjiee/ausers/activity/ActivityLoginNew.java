@@ -26,6 +26,7 @@ import com.yinjiee.ausers.interfaces.CommonCallback;
 import com.yinjiee.ausers.utils.ClickUtil;
 import com.yinjiee.ausers.utils.DialogUitl;
 import com.yinjiee.ausers.utils.ScreenDimenUtil;
+import com.yinjiee.ausers.utils.SpUtil;
 import com.yinjiee.ausers.utils.ToastUtil;
 import com.yinjiee.ausers.utils.ValidatePhoneUtil;
 
@@ -147,7 +148,13 @@ public class ActivityLoginNew extends AbsActivity implements View.OnClickListene
             }
         }else if(R.id.act_login_register_tv == vId){//注册
             if(ClickUtil.canClick()){
-                ActivityRegisterInviteCode.launch(mContext) ;
+                String invcode = SpUtil.getInstance().getStringValue(SpUtil.INVCODE);
+                if (invcode.length() > 0){
+                    ActivityRegisterNew.launch(mContext,invcode) ;
+                }else{
+                    ActivityRegisterInviteCode.launch(mContext) ;
+                }
+
 //                ActivityRegisterEdit.launch(mContext);
             }
         }

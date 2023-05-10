@@ -1,6 +1,7 @@
 package com.yinjiee.ausers.activity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.alibaba.fastjson.JSONObject;
+import com.google.gson.JsonObject;
 import com.yinjiee.ausers.AppConfig;
 import com.yinjiee.ausers.AppContext;
 import com.yinjiee.ausers.R;
@@ -55,20 +58,28 @@ public class LauncherActivity extends AppCompatActivity {
         }
 
         String icode = readInviteCode();
+        if (icode.length() > 0){
+//            new AlertDialog.Builder(this).setTitle("邀请码").setMessage(icode).setNegativeButton("确定", new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialogInterface, int i) {
+//                    getConfig();
+//                }
+//            }).create().show();
+            SpUtil.getInstance().setStringValue(SpUtil.INVCODE,icode);
+        }
 
-        new AlertDialog.Builder(this).setTitle("邀请码").setMessage(icode).create().show();
 
-//        setStatusBar();
-//        setContentView(R.layout.activity_launcher);
-//        mContext = this;
-//
-//        mHandler = new Handler();
-//        mHandler.postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                getConfig();
-//            }
-//        }, 800);
+        setStatusBar();
+        setContentView(R.layout.activity_launcher);
+        mContext = this;
+
+        mHandler = new Handler();
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                getConfig();
+            }
+        }, 800);
 
     }
 
@@ -77,6 +88,7 @@ public class LauncherActivity extends AppCompatActivity {
             InputStream is = null;
             BufferedReader reader = null;
             String result = "";
+
             StringBuilder sb = new StringBuilder();
             String line = "";
             try {
@@ -86,7 +98,11 @@ public class LauncherActivity extends AppCompatActivity {
                 while ((line = reader.readLine()) != null) {
                     sb.append(line + "\n");
                 }
-                result = sb.toString();
+                String result0 = sb.toString();
+                if (result0.length() > 0) {
+                    JSONObject obj = JSONObject.parseObject(result0);
+                    result = obj.getString("sharecode");
+                }
             } catch (Exception e) {
                 result = "";
             } finally {

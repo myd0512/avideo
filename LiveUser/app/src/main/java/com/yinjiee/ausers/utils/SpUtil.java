@@ -31,6 +31,8 @@ public class SpUtil {
     public static final String LOCATION_CITY = "locationCity";
     public static final String LOCATION_DISTRICT = "locationDistrict";
 
+    public static final String INVCODE = "incdercodesitrg";
+
 
     private SpUtil() {
         mSharedPreferences = AppContext.sInstance.getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
