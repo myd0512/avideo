@@ -54,6 +54,8 @@ public class ActivityExtension extends AbsActivity implements View.OnClickListen
     private TextView tv_invite_des1;
     private TextView tv_invite_des2;
 
+//    private String link = "";
+    private UserShareCode userShareCode;
 
     public static void launch(Context context){
         Intent toIt = new Intent(context,ActivityExtension.class) ;
@@ -137,7 +139,9 @@ public class ActivityExtension extends AbsActivity implements View.OnClickListen
                                 JSONObject obj = JSON.parseObject(info[0]);
                                 UserShareCode bean = JSON.toJavaObject(obj, UserShareCode.class);
                                 if(bean != null){
-                                    mInvCode = bean.getCode() ;
+                                    userShareCode = bean;
+                                    mInvCode = bean.getCode();
+//                                    link = bean.getLink();
                                     mShareCodeTv.setText("邀请码：" + mInvCode) ;
 
                                     if(showDialog){
@@ -195,7 +199,9 @@ public class ActivityExtension extends AbsActivity implements View.OnClickListen
             mCardShareIv.getLayoutParams().width = mCardWidHei;
             mCardShareIv.getLayoutParams().height = mCardWidHei;
 
-            mCardShareIv.setImageBitmap(ZXingUtils.createQRImage(mInvCode,mCardWidHei,mCardWidHei,null)) ;
+            //mCardShareIv.setImageBitmap(ZXingUtils.createQRImage(mInvCode,mCardWidHei,mCardWidHei,null)) ;
+
+            mCardShareIv.setImageBitmap(ZXingUtils.createQRImage(userShareCode.getLink(),mCardWidHei,mCardWidHei,null)) ;
             mCardShareTv.setText("邀请码 " + mInvCode) ;
 
             View closeIv = contentView.findViewById(R.id.dialog_user_card_share_close_iv) ;
@@ -251,7 +257,7 @@ public class ActivityExtension extends AbsActivity implements View.OnClickListen
     public void gotoCopy(View view){
         if(StringUtil.empty(mInvCode))return;
         try {
-            String str=getString(R.string.copy)+mInvCode;
+            String str=userShareCode.getSignature()+userShareCode.getLink();
             //获取剪贴板管理器：
             ClipboardManager cm = (ClipboardManager) mContext.getSystemService(Context.CLIPBOARD_SERVICE);
             // 创建普通字符型ClipData
