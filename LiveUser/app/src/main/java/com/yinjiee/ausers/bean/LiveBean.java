@@ -21,7 +21,7 @@ public class LiveBean implements Parcelable {
     private String title;
     private String city;
     private String stream;
-    private String pull;//拉流地址
+    private String steampull;//拉流地址
     private String thumb;
     private String nums;
     private int sex;
@@ -101,12 +101,12 @@ public class LiveBean implements Parcelable {
         this.stream = stream;
     }
 
-    public String getPull() {
-        return pull;
+    public String getSteamPull() {
+        return steampull;
     }
 
-    public void setPull(String pull) {
-        this.pull = pull;
+    public void setSteamPull(String pull) {
+        this.steampull = pull;
     }
 
     public String getThumb() {
@@ -234,7 +234,7 @@ public class LiveBean implements Parcelable {
         this.title = in.readString();
         this.city = in.readString();
         this.stream = in.readString();
-        this.pull = in.readString();
+        this.steampull = in.readString();
         this.thumb = in.readString();
         this.nums = in.readString();
         this.distance = in.readString();
@@ -261,7 +261,7 @@ public class LiveBean implements Parcelable {
         dest.writeString(this.title);
         dest.writeString(this.city);
         dest.writeString(this.stream);
-        dest.writeString(this.pull);
+        dest.writeString(this.steampull);
         dest.writeString(this.thumb);
         dest.writeString(this.nums);
         dest.writeString(this.distance);
@@ -287,6 +287,6 @@ public class LiveBean implements Parcelable {
 
     @Override
     public String toString() {
-        return "uid: " + uid + " , userNiceName: " + userNiceName + " ,playUrl: " + pull;
+        return "uid: " + uid + " , userNiceName: " + userNiceName + " ,playUrl: " + steampull;
     }
 }

@@ -316,7 +316,7 @@ public class LiveAnchorActivity extends LiveActivity implements LiveFunctionClic
         mDanmuPrice = obj.getString("barrage_fee");
         mShutTime = obj.getString("shut_time");
         String playUrl = obj.getString("pull");
-        mLiveBean.setPull(playUrl);
+//        mLiveBean.setPull(playUrl);
         //移除开播前的设置控件，添加直播间控件
         if (mLiveReadyViewHolder != null) {
             mLiveReadyViewHolder.removeFromParent();

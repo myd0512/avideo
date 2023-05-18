@@ -38,6 +38,7 @@ import com.yinjiee.ausers.game.bean.GameParam;
 import com.yinjiee.ausers.http.HttpCallback;
 import com.yinjiee.ausers.http.HttpConsts;
 import com.yinjiee.ausers.http.HttpUtil;
+import com.yinjiee.ausers.log;
 import com.yinjiee.ausers.presenter.LiveLinkMicAnchorPresenter;
 import com.yinjiee.ausers.presenter.LiveLinkMicPkPresenter;
 import com.yinjiee.ausers.presenter.LiveLinkMicPresenter;
@@ -256,12 +257,13 @@ public class LiveAudienceActivity extends LiveActivity {
             }
 
             private void setLiveRoomData(LiveBean liveBean) {
+                log.e("setLiveRoomData");
                 mLiveBean = liveBean;
                 mLiveUid = liveBean.getUid();
                 mLiveUserAvatar = liveBean.getAvatar();
                 mStream = liveBean.getStream();
                 mLivePlayViewHolder.setCover(liveBean.getThumb());
-                mLivePlayViewHolder.play(liveBean.getPull());
+//                mLivePlayViewHolder.play(liveBean.getSteamPull());
                 mLiveAudienceViewHolder.setLiveInfo(mLiveUid, mStream);
                 mLiveRoomViewHolder.setAvatar(liveBean.getAvatar());
                 mLiveRoomViewHolder.setAnchorLevel(liveBean.getLevelAnchor());
@@ -327,6 +329,8 @@ public class LiveAudienceActivity extends LiveActivity {
                     @Override
                     public void onSuccess(int code, String msg, String[] info) {
                         if (code == 0 && info.length > 0) {
+                            log.e("enterRoom=>");
+                            log.e(info[0]);
                             JSONObject obj = JSON.parseObject(info[0]);
                             mDanmuPrice = obj.getString("barrage_fee");
                             mShutTime = obj.getString("shut_time");
@@ -430,6 +434,10 @@ public class LiveAudienceActivity extends LiveActivity {
                             }
 
                             startGameResultSocket() ;
+
+
+                            String pull = obj.getString("pull");
+                            mLivePlayViewHolder.play(pull);
                         }
                     }
                 });
