@@ -287,6 +287,54 @@ public class DialogUitl {
         });
         dialog.show();
     }
+    public static void showStringArrayDialog(Context context, String[] array, final StringArrayDialogCallback2 callback) {
+        final Dialog dialog = new Dialog(context, R.style.dialog);
+        dialog.setContentView(R.layout.dialog_string_array);
+        dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
+        Window window = dialog.getWindow();
+        window.setWindowAnimations(R.style.bottomToTopAnim);
+        WindowManager.LayoutParams params = window.getAttributes();
+        params.width = WindowManager.LayoutParams.MATCH_PARENT;
+        params.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        params.gravity = Gravity.BOTTOM;
+        window.setAttributes(params);
+        LinearLayout container = dialog.findViewById(R.id.container);
+        View.OnClickListener itemListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView textView = (TextView) v;
+                if (callback != null) {
+                    callback.onItemClick(textView.getText().toString(), (int) v.getTag());
+                }
+                dialog.dismiss();
+            }
+        };
+        for (int i = 0, length = array.length; i < length; i++) {
+            TextView textView = new TextView(context);
+            textView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, DpUtil.dp2px(54)));
+            textView.setTextColor(0xff323232);
+            textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+            textView.setGravity(Gravity.CENTER);
+            textView.setText(array[i]);
+            textView.setTag(i);
+            textView.setOnClickListener(itemListener);
+            container.addView(textView);
+            if (i != length - 1) {
+                View v = new View(context);
+                v.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, DpUtil.dp2px(1)));
+                v.setBackgroundColor(0xfff5f5f5);
+                container.addView(v);
+            }
+        }
+        dialog.findViewById(R.id.btn_cancel).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
 
     public static void showDatePickerDialog(Context context, final DataPickerCallback callback) {
         final Dialog dialog = new Dialog(context, R.style.dialog);
@@ -478,6 +526,9 @@ public class DialogUitl {
 
     public interface StringArrayDialogCallback {
         void onItemClick(String text, int tag);
+    }
+    public interface StringArrayDialogCallback2 {
+        void onItemClick(String text, int index);
     }
 
     public interface SimpleCallback {

@@ -32,6 +32,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import cn.net.shoot.sharetracesdk.AppData;
+import cn.net.shoot.sharetracesdk.ShareTrace;
+import cn.net.shoot.sharetracesdk.ShareTraceInstallListener;
+
 /**
  * Created by cxf on 2018/9/17.
  */
@@ -57,16 +61,31 @@ public class LauncherActivity extends AppCompatActivity {
             return;
         }
 
-        String icode = readInviteCode();
-        if (icode.length() > 0){
-//            new AlertDialog.Builder(this).setTitle("邀请码").setMessage(icode).setNegativeButton("确定", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialogInterface, int i) {
-//                    getConfig();
-//                }
-//            }).create().show();
-            SpUtil.getInstance().setStringValue(SpUtil.INVCODE,icode);
-        }
+        ShareTrace.getInstallTrace(new ShareTraceInstallListener() {
+            @Override
+            public void onInstall(AppData data) {
+//                Log.i(TAG, "appData=" + data.toString());
+                if (data.paramsData != null && data.paramsData.length() != 0){
+                    SpUtil.getInstance().setStringValue(SpUtil.INVCODE,data.paramsData);
+                }
+            }
+
+            @Override
+            public void onError(int code, String msg) {
+//                Log.e(TAG, "Get install trace info error. code=" + code + ",msg=" + msg);
+            }
+        });
+
+//        String icode = readInviteCode();
+//        if (icode.length() > 0){
+////            new AlertDialog.Builder(this).setTitle("邀请码").setMessage(icode).setNegativeButton("确定", new DialogInterface.OnClickListener() {
+////                @Override
+////                public void onClick(DialogInterface dialogInterface, int i) {
+////                    getConfig();
+////                }
+////            }).create().show();
+//            SpUtil.getInstance().setStringValue(SpUtil.INVCODE,icode);
+//        }
 
 
         setStatusBar();

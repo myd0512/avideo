@@ -33,7 +33,7 @@ import java.util.Map;
 public class AppConfig {
 
     //域名
-    public static final String HOST_BASE = "http://47.98.202.55:8688";
+    public static final String HOST_BASE = "http://main.kuangba.vip";
 
     public static final String HOST(){
         if (AppConfig.getInstance().getConfig() != null){

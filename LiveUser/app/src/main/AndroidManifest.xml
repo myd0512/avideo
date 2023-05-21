@@ -321,7 +321,9 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--支付宝 end-->
 
-
+        <meta-data
+            android:name="com.sharetrace.APP_KEY"
+            android:value="53e7c04ac0c56bdc"/>
         <!--友盟统计-->
         <meta-data
             android:name="UMENG_APPKEY"

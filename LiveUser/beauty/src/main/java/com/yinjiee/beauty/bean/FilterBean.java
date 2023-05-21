@@ -1,5 +1,7 @@
 package com.yinjiee.beauty.bean;
 
+//import cn.tillusory.sdk.bean.TiFilterEnum;
+
 import cn.tillusory.sdk.bean.TiFilterEnum;
 
 /**

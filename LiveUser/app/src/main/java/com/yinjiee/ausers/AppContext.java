@@ -17,6 +17,7 @@ import com.yinjiee.ausers.im.ImMessageUtil;
 import com.yinjiee.ausers.im.ImPushUtil;
 import com.yinjiee.ausers.utils.L;
 
+import cn.net.shoot.sharetracesdk.ShareTrace;
 import cn.tillusory.sdk.TiSDK;
 
 
@@ -56,6 +57,10 @@ public class AppContext extends MultiDexApplication {
         //初始化友盟统计
         UMConfigure.init(this, UMConfigure.DEVICE_TYPE_PHONE, null);
         registerActivityLifecycleCallbacks();
+
+
+        ShareTrace.init(this);
+
     }
 
     /**

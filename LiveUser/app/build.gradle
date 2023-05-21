@@ -123,4 +123,7 @@ dependencies {
     //倒计时
     compile 'com.github.iwgang:countdownview:2.1.6'
     implementation 'com.orhanobut:logger:2.2.0'
+
+    implementation(name: 'sharetrace-android-sdk-2.1.9', ext: 'aar')
 }
+
