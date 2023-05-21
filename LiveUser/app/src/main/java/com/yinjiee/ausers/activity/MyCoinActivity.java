@@ -3,6 +3,7 @@ package com.yinjiee.ausers.activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -25,6 +26,7 @@ import com.yinjiee.ausers.http.HttpClient;
 import com.yinjiee.ausers.http.HttpConsts;
 import com.yinjiee.ausers.http.HttpUtil;
 import com.yinjiee.ausers.interfaces.OnItemClickListener;
+import com.yinjiee.ausers.log;
 import com.yinjiee.ausers.pay.PayCallback;
 import com.yinjiee.ausers.pay.ali.AliPayBuilder;
 import com.yinjiee.ausers.pay.wx.WxPayBuilder;
@@ -99,6 +101,7 @@ public class MyCoinActivity extends AbsActivity implements OnItemClickListener<C
             public void onSuccess(int code, String msg, String[] info) {
                 if (code == 0) {
                     JSONObject obj = JSON.parseObject(info[0]);
+                    //log.e(obj.toString());
                     String coin = StringUtil.converMoney2Point(obj.getString("coin"));
                     mBalanceValue = coin ;
                     mBalance.setText(coin);
@@ -167,7 +170,7 @@ public class MyCoinActivity extends AbsActivity implements OnItemClickListener<C
 //    };
 
     private void h5Pay(String id){
-        HttpClient.getInstance().get("Charge.getAliOrder", HttpConsts.GET_ALI_ORDER)
+        HttpClient.getInstance().get("Charge.getH5Order", HttpConsts.GET_ALI_ORDER)
                 .params("uid", AppConfig.getInstance().getUid())
                 .params("money", mCheckedCoinBean.getMoney())
                 .params("changeid", mCheckedCoinBean.getId())
@@ -175,7 +178,12 @@ public class MyCoinActivity extends AbsActivity implements OnItemClickListener<C
                 .execute(new HttpCallback() {
                     @Override
                     public void onSuccess(int code, String msg, String[] info) {
-
+//                        checkPayResult();
+                        JSONObject obj = JSON.parseObject(info[0]);
+                        String url = obj.getString("url");
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
                     }
                     @Override
                     public boolean showLoadingDialog() {

@@ -86,6 +86,8 @@ public class MainActivity extends AbsActivity {
         mViewHolders[2] = new MainListViewHolderNew(mContext, mViewPager);
         mViewHolders[3] = new MainNiurenViewHolder(mContext, mViewPager);
         mViewHolders[4] = new MainMeViewHolder(mContext, mViewPager);
+
+
         List<View> list = new ArrayList<>();
         MainAppBarLayoutListener appBarLayoutListener = new MainAppBarLayoutListener() {
             @Override

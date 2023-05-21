@@ -40,6 +40,7 @@
                 app:tbn_unselected_icon="@mipmap/icon_main_home_0" />
 
             <com.yinjiee.ausers.custom.TabButton
+                android:visibility="gone"
                 android:layout_width="@dimen/margin_padding_0"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
