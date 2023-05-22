@@ -30,14 +30,21 @@ public class AppConfig {
     public static final String HOST_BASE = "http://main.kuangba.vip";
 //    public static final String HOST_BASE = "http://" + HOST_BASE;
     public static final String HOST(){
-        if (AppConfig.getInstance().getConfig() != null){
+        if (AppConfig.getInstance().getConfigIns() != null){
             return AppConfig.getInstance().getConfig().apiurl;
         }else {
             return HOST_BASE;
         }
     }
 
-    public static final String SOCKET_BASE_IP = "47.98.202.55" ;
+    private static String _SOCKET_BASE_IP = "47.98.202.55";
+    public static final String SOCKET_BASE_IP(){
+        if (AppConfig.getInstance().getConfigIns() != null){
+            return AppConfig.getInstance().getConfig().socketip;
+        }else {
+            return _SOCKET_BASE_IP;
+        }
+    }
 
     //外部sd卡
     public static final String DCMI_PATH = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath();
@@ -148,7 +155,10 @@ public class AppConfig {
         }
         return mConfig;
     }
+    public ConfigBean getConfigIns() {
 
+        return mConfig;
+    }
     public void getConfig(CommonCallback<ConfigBean> callback) {
         if (callback == null) {
             return;

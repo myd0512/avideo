@@ -36,13 +36,20 @@ public class AppConfig {
     public static final String HOST_BASE = "http://main.kuangba.vip";
 
     public static final String HOST(){
-        if (AppConfig.getInstance().getConfig() != null){
+        if (AppConfig.getInstance().getConfigIns() != null){
             return AppConfig.getInstance().getConfig().apiurl;
         }else {
             return HOST_BASE;
         }
     }
-    public static final String SOCKET_BASE_IP = "47.98.202.55" ;
+    private static String _SOCKET_BASE_IP = "47.98.202.55";
+    public static final String SOCKET_BASE_IP(){
+        if (AppConfig.getInstance().getConfigIns() != null){
+            return AppConfig.getInstance().getConfig().socketip;
+        }else {
+            return _SOCKET_BASE_IP;
+        }
+    }
 
     //客服链接
     public static final String CUSTOMER_WEB_HERF = "" ;
@@ -155,6 +162,9 @@ public class AppConfig {
                 mConfig = JSON.parseObject(configString, ConfigBean.class);
             }
         }
+        return mConfig;
+    }
+    public ConfigBean getConfigIns() {
         return mConfig;
     }
 

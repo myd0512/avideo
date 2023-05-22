@@ -133,7 +133,7 @@ public class LiveGameTzInfoDialogFragment extends AbsDialogFragment implements V
             gameId = bundle.getString(Constants.LIVE_GAME_ID);
         }
 
-        URI uri = URI.create(HttpConsts.SOCKET_GAME_PUSH_URL);
+        URI uri = URI.create(HttpConsts.SOCKET_GAME_PUSH_URL());
         socketClient = new JWebSocketClient(mContext,uri,JWebSocketClient.GAME_SOCKET_TYPE_TOUZHU);
         socketClient.connect();
 

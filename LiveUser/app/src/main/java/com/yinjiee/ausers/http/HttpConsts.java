@@ -172,16 +172,16 @@ public class HttpConsts {
     public static final String LIVE_GAME_TZ_DIALOG_FRAGMENT = "LiveGameTzDialogFragment";
     public static final String LIVE_GAME_TZ_INFO_DIALOG_FRAGMENT = "LiveGameTzInfoDialogFragment";
 
-    public static final String SOCKET_YFKS_URL = "ws://" + AppConfig.SOCKET_BASE_IP + ":1238";
-    public static final String SOCKET_YFLHC_URL = "ws://" + AppConfig.SOCKET_BASE_IP + ":1242";
-    public static final String SOCKET_YF115_URL = "ws://" + AppConfig.SOCKET_BASE_IP + ":1239";
-    public static final String SOCKET_YFSC_URL = "ws://" + AppConfig.SOCKET_BASE_IP + ":1240";
-    public static final String SOCKET_YFSSC_URL = "ws://" + AppConfig.SOCKET_BASE_IP + ":1241";
-    public static final String SOCKET_YFKLSF_URL = "ws://" + AppConfig.SOCKET_BASE_IP + ":1243";
-    public static final String SOCKET_YFKLNC_URL = "ws://" + AppConfig.SOCKET_BASE_IP + ":1244";
+    public static  String SOCKET_YFKS_URL() {return "ws://" + AppConfig.SOCKET_BASE_IP() + ":1238";};
+    public static  String SOCKET_YFLHC_URL() {return "ws://" + AppConfig.SOCKET_BASE_IP() + ":1242";};
+    public static  String SOCKET_YF115_URL() {return "ws://" + AppConfig.SOCKET_BASE_IP() + ":1239";};
+    public static  String SOCKET_YFSC_URL() {return "ws://" + AppConfig.SOCKET_BASE_IP() + ":1240";};
+    public static  String SOCKET_YFSSC_URL() {return "ws://" + AppConfig.SOCKET_BASE_IP() + ":1241";};
+    public static  String SOCKET_YFKLSF_URL() {return "ws://" + AppConfig.SOCKET_BASE_IP() + ":1243";};
+    public static  String SOCKET_YFKLNC_URL() {return "ws://" + AppConfig.SOCKET_BASE_IP() + ":1244";};
 
     //投注推送
-    public static final String SOCKET_GAME_PUSH_URL = "ws://" + AppConfig.SOCKET_BASE_IP + ":1237";
+    public static  String SOCKET_GAME_PUSH_URL() {return "ws://" + AppConfig.SOCKET_BASE_IP() + ":1237";};
 
     //基本信息
     public static final String GET_YFKS_INFO = "Game.get_yfks_info";
@@ -259,28 +259,28 @@ public class HttpConsts {
         String url ;
         switch (gameType){
             case "1":
-                url = SOCKET_YFKS_URL ;
+                url = SOCKET_YFKS_URL() ;
                 break;
             case "2":
-                url = SOCKET_YF115_URL;
+                url = SOCKET_YF115_URL();
                 break;
             case "3":
-                url = SOCKET_YFSC_URL;
+                url = SOCKET_YFSC_URL();
                 break;
             case "4":
-                url = SOCKET_YFSSC_URL;
+                url = SOCKET_YFSSC_URL();
                 break;
             case "5":
-                url = SOCKET_YFLHC_URL;
+                url = SOCKET_YFLHC_URL();
                 break;
             case "6":
-                url = SOCKET_YFKLSF_URL;
+                url = SOCKET_YFKLSF_URL();
                 break;
             case "7":
-                url = SOCKET_YFKLNC_URL;
+                url = SOCKET_YFKLNC_URL();
                 break;
             default:
-                url = SOCKET_YFKS_URL ;
+                url = SOCKET_YFKS_URL() ;
                 break;
         }
 

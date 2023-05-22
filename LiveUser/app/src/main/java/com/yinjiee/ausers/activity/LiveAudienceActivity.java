@@ -251,7 +251,7 @@ public class LiveAudienceActivity extends LiveActivity {
                     enterRoom();
                 }
 
-                URI uri = URI.create(HttpConsts.SOCKET_GAME_PUSH_URL);
+                URI uri = URI.create(HttpConsts.SOCKET_GAME_PUSH_URL());
                 mTzSocket = new JWebSocketClient(mContext,uri,JWebSocketClient.GAME_SOCKET_TYPE_ROBOT);
                 mTzSocket.connect();
             }

@@ -629,29 +629,44 @@ public class LiveGameOptionDialogFragment extends AbsDialogFragment implements V
         EventBus.getDefault().post(new GameResultEvent(false,mGameType,mGameNewPeroid, StringUtil.convertInt(mGameTime))) ;
 
         String gameUrl = HttpConsts.getGameResultUrlByType(mGameType) ;
-        switch (gameUrl) {
-            case HttpConsts.SOCKET_YFSC_URL:
-                initYfscLastAward(strArr, mGameTime, mGameNewPeroid);
-                break;
-            case HttpConsts.SOCKET_YFKS_URL:
-                initYfksLastAward(strArr, mGameTime, mGameNewPeroid);
-                break;
-            case HttpConsts.SOCKET_YFLHC_URL:
-                initYflhcLastAward(strArr,mGameTime, mGameNewPeroid);
-                break;
-            case HttpConsts.SOCKET_YF115_URL:
-                initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
-                break;
-            case HttpConsts.SOCKET_YFSSC_URL:
-                initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
-                break;
-            case HttpConsts.SOCKET_YFKLSF_URL:
-                initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
-                break;
-            case HttpConsts.SOCKET_YFKLNC_URL:
-                initYfklncLastAward(strArr, mGameTime, mGameNewPeroid);
-                break;
+        if (gameUrl.equals(HttpConsts.SOCKET_YFSC_URL())){
+            initYfscLastAward(strArr, mGameTime, mGameNewPeroid);
+        }else if (gameUrl.equals(HttpConsts.SOCKET_YFKS_URL())){
+            initYfksLastAward(strArr, mGameTime, mGameNewPeroid);
+        }else if (gameUrl.equals(HttpConsts.SOCKET_YFLHC_URL())){
+            initYflhcLastAward(strArr,mGameTime, mGameNewPeroid);
+        }else if (gameUrl.equals(HttpConsts.SOCKET_YF115_URL())){
+            initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
+        }else if (gameUrl.equals(HttpConsts.SOCKET_YFSSC_URL())){
+            initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
+        }else if (gameUrl.equals(HttpConsts.SOCKET_YFKLSF_URL())){
+            initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
+        }else if (gameUrl.equals(HttpConsts.SOCKET_YFKLNC_URL())){
+            initYfklncLastAward(strArr, mGameTime, mGameNewPeroid);
         }
+//        switch (gameUrl) {
+//            case HttpConsts.SOCKET_YFSC_URL():
+//                initYfscLastAward(strArr, mGameTime, mGameNewPeroid);
+//                break;
+//            case HttpConsts.SOCKET_YFKS_URL():
+//                initYfksLastAward(strArr, mGameTime, mGameNewPeroid);
+//                break;
+//            case HttpConsts.SOCKET_YFLHC_URL():
+//                initYflhcLastAward(strArr,mGameTime, mGameNewPeroid);
+//                break;
+//            case HttpConsts.SOCKET_YF115_URL():
+//                initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
+//                break;
+//            case HttpConsts.SOCKET_YFSSC_URL():
+//                initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
+//                break;
+//            case HttpConsts.SOCKET_YFKLSF_URL():
+//                initYf115LastAward(strArr, mGameTime, mGameNewPeroid);
+//                break;
+//            case HttpConsts.SOCKET_YFKLNC_URL():
+//                initYfklncLastAward(strArr, mGameTime, mGameNewPeroid);
+//                break;
+//        }
     }
 
 //    @Subscribe(threadMode = ThreadMode.MAIN)

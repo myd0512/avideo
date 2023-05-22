@@ -27,6 +27,7 @@ import com.yinjiee.ausers.http.HttpCallback;
 import com.yinjiee.ausers.http.HttpConsts;
 import com.yinjiee.ausers.http.HttpUtil;
 import com.yinjiee.ausers.interfaces.OnFragmentDismissListener;
+import com.yinjiee.ausers.log;
 import com.yinjiee.ausers.socket.JWebSocketClient;
 import com.yinjiee.ausers.utils.SpUtil;
 import com.yinjiee.ausers.utils.StringUtil;
@@ -175,7 +176,7 @@ public class LiveGameTzDialogFragment extends AbsDialogFragment implements View.
             }
         }
 
-        URI uri = URI.create(HttpConsts.SOCKET_GAME_PUSH_URL);
+        URI uri = URI.create(HttpConsts.SOCKET_GAME_PUSH_URL());
         socketClient = new JWebSocketClient(mContext,uri,JWebSocketClient.GAME_SOCKET_TYPE_TOUZHU);
         socketClient.connect();
 
@@ -356,7 +357,8 @@ public class LiveGameTzDialogFragment extends AbsDialogFragment implements View.
                 strSend.deleteCharAt(strSend.length()-1);
             }
 
-            LogUtil.e("TestTouzhu","param=" + strSend.toString()) ;
+            log.e("TestTouzhu=" + strSend.toString());
+            //LogUtil.e("TestTouzhu","param=" + strSend.toString()) ;
 
             getSocket(strSend.toString());
         }

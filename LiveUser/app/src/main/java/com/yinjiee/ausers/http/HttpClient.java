@@ -24,6 +24,9 @@ public class HttpClient {
     private OkHttpClient mOkHttpClient;
     private String mLanguage;//语言
     private String mUrl;
+    public String getmUrl(){
+        return mUrl;
+    }
 
     private HttpClient() {
         mUrl = AppConfig.HOST() + "/api/public/?service=";

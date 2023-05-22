@@ -143,7 +143,7 @@ public class HttpUtil {
      * 获取config
      */
     public static void getConfig(final CommonCallback<ConfigBean> commonCallback) {
-        log.e("getConfig---->");
+        log.e("getConfig---->"+ HttpClient.getInstance().getmUrl());
         HttpClient.getInstance().get("Home.getConfig", HttpConsts.GET_CONFIG)
                 .execute(new HttpCallback() {
                     @Override

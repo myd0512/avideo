@@ -10,6 +10,7 @@ import java.util.List;
 
 public class ConfigBean {
     public String apiurl;
+    public String socketip;
     private String version;//Android apk安装包 版本号
     private String downloadApkUrl;//Android apk安装包 下载地址
     private String updateDes;//版本更新描述
