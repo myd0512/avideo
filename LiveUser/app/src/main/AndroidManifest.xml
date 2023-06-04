@@ -78,6 +78,9 @@
             android:name="com.yinjiee.ausers.activity.ActivitySetPass"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.yinjiee.ausers.activity.VIPActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.yinjiee.ausers.activity.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity

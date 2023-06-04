@@ -551,6 +551,7 @@ public class HttpUtil {
                     @Override
                     public void onSuccess(int code, String msg, String[] info) {
                         if (code == 0 && info.length > 0) {
+                            log.e(info[0]);
                             NiurenInfoBean bean = null;
                             try {
                                 bean= JSON.parseObject(info[0],NiurenInfoBean.class);
@@ -981,6 +982,7 @@ public class HttpUtil {
                 .params("token", AppConfig.getInstance().getToken())
                 .execute(callback);
     }
+
 
 
     /**

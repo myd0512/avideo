@@ -9,10 +9,12 @@ import com.alibaba.fastjson.JSONObject;
 import com.yinjiee.ausers.Constants;
 import com.yinjiee.ausers.R;
 import com.yinjiee.ausers.activity.LiveAudienceActivity;
+import com.yinjiee.ausers.activity.VIPActivity;
 import com.yinjiee.ausers.bean.LiveBean;
 import com.yinjiee.ausers.http.HttpCallback;
 import com.yinjiee.ausers.http.HttpConsts;
 import com.yinjiee.ausers.http.HttpUtil;
+import com.yinjiee.ausers.log;
 import com.yinjiee.ausers.utils.DialogUitl;
 import com.yinjiee.ausers.utils.MD5Util;
 import com.yinjiee.ausers.utils.ToastUtil;
@@ -43,6 +45,7 @@ public class CheckLivePresenter {
         mLiveBean = bean;
         mKey = key;
         mPosition = position;
+
         HttpUtil.checkLive(bean.getUid(), bean.getStream(), mCheckLiveCallback);
     }
 
@@ -68,7 +71,14 @@ public class CheckLivePresenter {
                             break;
                     }
                 }
-            } else {
+            }else if(code == 1011) {
+                DialogUitl.showSimpleDialog(mContext, "只有VIP才能观看", new DialogUitl.SimpleCallback() {
+                    @Override
+                    public void onConfirmClick(Dialog dialog, String content) {
+                        VIPActivity.forward(mContext);
+                    }
+                });
+            }else {
                 ToastUtil.show(msg);
             }
         }

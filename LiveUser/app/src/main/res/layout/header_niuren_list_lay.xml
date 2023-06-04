@@ -45,7 +45,7 @@
             android:layout_alignParentRight="true"
             android:textSize="13dp"
             android:textColor="@color/textColor2"
-            android:text="实时公布最新注单"/>
+            android:text="每日下单排名"/>
     </RelativeLayout>
 
 </LinearLayout>

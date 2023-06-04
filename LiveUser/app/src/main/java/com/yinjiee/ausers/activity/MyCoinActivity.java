@@ -63,6 +63,8 @@ public class MyCoinActivity extends AbsActivity implements OnItemClickListener<C
 //    private SparseArray<String> mSparseArray;
     List<PayChannel> paylist;
 
+    private String changetype = "1";
+
     @Override
     protected int getLayoutId() {
         return R.layout.activity_coin;
@@ -174,6 +176,7 @@ public class MyCoinActivity extends AbsActivity implements OnItemClickListener<C
                 .params("uid", AppConfig.getInstance().getUid())
                 .params("money", mCheckedCoinBean.getMoney())
                 .params("changeid", mCheckedCoinBean.getId())
+                .params("changetype",changetype)
                 .params("coin", mCheckedCoinBean.getCoin()).params("id", id)
                 .execute(new HttpCallback() {
                     @Override

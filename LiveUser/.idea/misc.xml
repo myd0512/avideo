@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_coin.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/activity_extension.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/activity_launcher.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/activity_login_num.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/activity_register_invite_code.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/activity_register_new.xml" value="0.2708333333333333" />
+        <entry key="app/src/main/res/layout/activity_vip.xml" value="0.26979166666666665" />
+        <entry key="app/src/main/res/layout/adapter_niuren_list.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/dialog_user_card_share.xml" value="0.2708333333333333" />
+        <entry key="app/src/main/res/layout/header_niuren_list_lay.xml" value="0.2708333333333333" />
+        <entry key="app/src/main/res/layout/view_main_niuren_lay.xml" value="0.2708333333333333" />
         <entry key="game/src/main/res/layout/game_view_bet_zp.xml" value="0.2708333333333333" />
       </map>
     </option>

@@ -71,8 +71,9 @@
                     android:maxEms="8"
                     android:maxLines="1"
                     android:ellipsize="end"
-                    android:text="场次/1234中1250"/>
+                    android:text=""/>
                 <TextView
+                    android:visibility="gone"
                     android:id="@+id/adapter_niuren_list_rate_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -88,12 +89,13 @@
                     android:maxEms="8"
                     android:maxLines="1"
                     android:ellipsize="end"
-                    android:text="胜率/19.56%"/>
+                    android:text=""/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
     <RelativeLayout
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

@@ -8,6 +8,7 @@ import com.lzy.okgo.model.Response;
 import com.lzy.okgo.request.base.Request;
 import com.yinjiee.ausers.R;
 import com.yinjiee.ausers.activity.LoginInvalidActivity;
+import com.yinjiee.ausers.log;
 import com.yinjiee.ausers.utils.L;
 import com.yinjiee.ausers.utils.ToastUtil;
 
@@ -33,7 +34,9 @@ public abstract class HttpCallback extends AbsCallback<JsonBean> {
     @Override
     public void onSuccess(Response<JsonBean> response) {
         JsonBean bean = response.body();
+
         if (bean != null) {
+
             if (200 == bean.getRet()) {
                 Data data = bean.getData();
                 if (data != null) {
@@ -41,6 +44,7 @@ public abstract class HttpCallback extends AbsCallback<JsonBean> {
                         //token过期，重新登录
                         LoginInvalidActivity.forward(data.getMsg());
                     } else {
+
                         onSuccess(data.getCode(), data.getMsg(), data.getInfo());
                     }
                 } else {

@@ -21,6 +21,7 @@ import com.yinjiee.ausers.activity.MyCoinActivity;
 import com.yinjiee.ausers.activity.MyProfitActivity;
 import com.yinjiee.ausers.activity.MyVideoActivity;
 import com.yinjiee.ausers.activity.SettingActivity;
+import com.yinjiee.ausers.activity.VIPActivity;
 import com.yinjiee.ausers.activity.WebViewPagerActivity;
 import com.yinjiee.ausers.adapter.MainMeAdapter;
 import com.yinjiee.ausers.bean.LevelBean;
@@ -33,6 +34,7 @@ import com.yinjiee.ausers.interfaces.CommonCallback;
 import com.yinjiee.ausers.interfaces.LifeCycleAdapter;
 import com.yinjiee.ausers.interfaces.MainAppBarLayoutListener;
 import com.yinjiee.ausers.interfaces.OnItemClickListener;
+import com.yinjiee.ausers.log;
 import com.yinjiee.ausers.utils.IconUtil;
 import com.yinjiee.ausers.utils.L;
 import com.yinjiee.ausers.utils.StringUtil;
@@ -179,6 +181,7 @@ public class MainMeViewHolder extends AbsMainChildViewHolder implements OnItemCl
     @Override
     public void onItemClick(UserItemBean bean, int position) {
         String url = bean.getHref();
+//        log.e(bean.getId()+"..");
         if (TextUtils.isEmpty(url)) {
             switch (bean.getId()) {
                 case 1:
@@ -195,8 +198,9 @@ public class MainMeViewHolder extends AbsMainChildViewHolder implements OnItemCl
                     break;
                 case 20://房间管理
 
-
-
+                    break;
+                case 4:
+                    VIPActivity.forward(mContext);
                     break;
 
             }
@@ -212,6 +216,7 @@ public class MainMeViewHolder extends AbsMainChildViewHolder implements OnItemCl
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()) {
             case R.id.btn_edit:
                 forwardEditProfile();
