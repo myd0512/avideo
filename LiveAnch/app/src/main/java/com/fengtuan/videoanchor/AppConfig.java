@@ -27,7 +27,7 @@ import java.util.Map;
 
 public class AppConfig {
     //域名
-    public static final String HOST_BASE = "http://main.kuangba.vip";
+    public static final String HOST_BASE = "http://154.198.224.101:8081";
 //    public static final String HOST_BASE = "http://" + HOST_BASE;
     public static final String HOST(){
         if (AppConfig.getInstance().getConfigIns() != null){

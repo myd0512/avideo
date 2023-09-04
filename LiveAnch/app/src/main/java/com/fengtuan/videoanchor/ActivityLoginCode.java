@@ -5,6 +5,7 @@ import android.animation.ValueAnimator;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -254,7 +255,9 @@ public class ActivityLoginCode extends AbsActivity implements View.OnClickListen
      */
     private void registerByCode(){
         String code = mCodeEv.getText().toString() ;
-        HttpUtil.registerByCode(mPhone, code,mInviteCode, new HttpCallback() {
+
+        String androidId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+        HttpUtil.registerByCode(mPhone, code,mInviteCode,androidId, new HttpCallback() {
             @Override
             public void onSuccess(int code, String msg, String[] info) {
                 mLoadingDialog.dismiss();

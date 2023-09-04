@@ -47,7 +47,7 @@ public class ActivityExtension extends AbsActivity implements View.OnClickListen
     private Dialog mCardShareDialog;//铭牌
     private View mCardLay ;
     private TextView tv_invite_count1;
-    private TextView tv_invite_count2;
+//    private TextView tv_invite_count2;
     private TextView tv_invite_money1;
     private TextView tv_invite_money2;
 
@@ -77,7 +77,7 @@ public class ActivityExtension extends AbsActivity implements View.OnClickListen
         tv_invite_des2 = findViewById(R.id.tv_invite_des2) ;
         mShareCodeTv = findViewById(R.id.act_extension_code_tv) ;
         tv_invite_count1 = findViewById(R.id.tv_invite_count1) ;
-        tv_invite_count2 = findViewById(R.id.tv_invite_count2) ;
+//        tv_invite_count2 = findViewById(R.id.tv_invite_count2) ;
         tv_invite_money1 = findViewById(R.id.tv_invite_money1) ;
         tv_invite_money2 = findViewById(R.id.tv_invite_money2) ;
         View helpIv = findViewById(R.id.act_extension_help_iv) ;
@@ -326,7 +326,7 @@ public class ActivityExtension extends AbsActivity implements View.OnClickListen
                                  */
                                 JSONObject obj = JSON.parseObject(info[0]);
                                 tv_invite_count1.setText(obj.getString("nums"));
-                                tv_invite_count2.setText(obj.getString("is_effective_user_num"));
+//                                tv_invite_count2.setText(obj.getString("is_effective_user_num"));
                                 tv_invite_money1.setText(obj.getString("yesday_coins"));
                                 tv_invite_money2.setText(obj.getString("coins"));
                             } catch (Exception e) {

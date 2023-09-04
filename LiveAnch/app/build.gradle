@@ -10,12 +10,12 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
-
+        archivesBaseName = "app-anch"
         multiDexEnabled true
 
-        ndk {
-            abiFilters "armeabi-v7a"
-        }
+//        ndk {
+//            abiFilters "armeabi-v7a"
+//        }
     }
 
 

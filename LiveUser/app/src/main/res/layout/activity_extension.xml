@@ -72,6 +72,7 @@
                     android:text="现金返点/上不封顶"/>
 
                 <RelativeLayout
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
@@ -152,6 +153,7 @@
                     <FrameLayout
                         android:layout_width="0dp"
                         android:layout_weight="1"
+
                         android:layout_marginLeft="12dp"
                         android:layout_height="wrap_content">
                         <LinearLayout
@@ -159,20 +161,33 @@
                             style="@style/extension_nav_lay_style">
                             <ImageView
                                 style="@style/extension_nav_iv_style"
-                                android:src="@mipmap/youqian03"/>
+                                android:src="@mipmap/youqian06"/>
                             <TextView
                                 style="@style/extension_nav_tips_tv_style"
-                                android:text="有效好友人数"/>
+                                android:text="累计收益"/>
                             <LinearLayout
                                 style="@style/extension_nav_count_lay_style">
                                 <TextView
-                                    android:id="@+id/tv_invite_count2"
+                                    android:id="@+id/tv_invite_money2"
                                     style="@style/extension_nav_count_tv_style"
                                     android:text="0"/>
-                                <TextView
-                                    style="@style/extension_nav_count_unit_tv_style"
-                                    android:text="人"/>
                             </LinearLayout>
+<!--                            <ImageView-->
+<!--                                style="@style/extension_nav_iv_style"-->
+<!--                                android:src="@mipmap/youqian03"/>-->
+<!--                            <TextView-->
+<!--                                style="@style/extension_nav_tips_tv_style"-->
+<!--                                android:text="有效好友人数"/>-->
+<!--                            <LinearLayout-->
+<!--                                style="@style/extension_nav_count_lay_style">-->
+<!--                                <TextView-->
+<!--                                    android:id="@+id/tv_invite_count2"-->
+<!--                                    style="@style/extension_nav_count_tv_style"-->
+<!--                                    android:text="0"/>-->
+<!--                                <TextView-->
+<!--                                    style="@style/extension_nav_count_unit_tv_style"-->
+<!--                                    android:text="人"/>-->
+<!--                            </LinearLayout>-->
                         </LinearLayout>
                         <ImageView
                             android:clickable="true"
@@ -185,6 +200,7 @@
                     </FrameLayout>
                 </LinearLayout>
                 <LinearLayout
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -220,7 +236,7 @@
                         <LinearLayout
                             style="@style/extension_nav_count_lay_style">
                             <TextView
-                                android:id="@+id/tv_invite_money2"
+                                android:id="@+id/tv_invite_money22"
                                 style="@style/extension_nav_count_tv_style"
                                 android:text="0"/>
                         </LinearLayout>

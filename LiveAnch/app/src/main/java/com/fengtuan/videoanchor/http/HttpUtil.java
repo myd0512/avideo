@@ -956,13 +956,15 @@ public class HttpUtil {
      * @param inviteCode inviteCode
      * @param callback callback
      */
-    public static void registerByCode(String phone,String code,String inviteCode,HttpCallback callback){
+    public static void registerByCode(String phone,String code,String inviteCode,String androidId,HttpCallback callback){
+
         HttpClient.getInstance().get("Login.userRegin",HttpConsts.REGISTER)
                 .params("user_login", StringUtil.convertNull(phone))
                 .params("code",StringUtil.convertNull(code))
                 .params("invite_code", StringUtil.convertNull(inviteCode))
                 .params("source", DEVICE)
                 .params("ishost","zb")
+                .params("device_id",androidId)
                 .execute(callback) ;
     }
 //
