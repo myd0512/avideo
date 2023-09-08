@@ -142,8 +142,10 @@ public class LiveAudienceActivity extends LiveActivity {
                     mLivePlayViewHolder = new LiveTxPlayViewHolder(mContext, (ViewGroup) findViewById(R.id.play_container));
                 } else {
                     //金山云播放器
+
                     mLivePlayViewHolder = new LiveKsyPlayViewHolder(mContext, (ViewGroup) findViewById(R.id.play_container));
                 }
+
                 mLivePlayViewHolder.addToParent();
                 addLifeCycleListener(mLivePlayViewHolder.getLifeCycleListener());
                 mViewPager =  findViewById(R.id.viewPager);

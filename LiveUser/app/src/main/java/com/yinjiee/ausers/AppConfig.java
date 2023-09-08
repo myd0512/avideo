@@ -33,7 +33,7 @@ import java.util.Map;
 public class AppConfig {
 
     //域名
-    public static final String HOST_BASE = "http://154.198.224.101:8081";
+    public static final String HOST_BASE = "http://api.kuang8.vip";
 //    public static final String HOST_BASE = "http://47.98.202.55:8688";
 
     public static final String HOST(){
@@ -43,7 +43,7 @@ public class AppConfig {
             return HOST_BASE;
         }
     }
-    private static String _SOCKET_BASE_IP = "47.98.202.55";
+    private static String _SOCKET_BASE_IP = "s.kuang8.vip";
     public static final String SOCKET_BASE_IP(){
         if (AppConfig.getInstance().getConfigIns() != null){
             return AppConfig.getInstance().getConfig().socketip;
@@ -489,6 +489,9 @@ public class AppConfig {
                 JSONObject obj = JSON.parseObject(configString);
                 setAnchorLevel(obj.getString("levelanchor"));
             }
+        }
+        if(mAnchorLevelMap == null){
+            mAnchorLevelMap = new SparseArray<>();
         }
         int size = mAnchorLevelMap.size();
         if (mAnchorLevelMap == null || size == 0) {

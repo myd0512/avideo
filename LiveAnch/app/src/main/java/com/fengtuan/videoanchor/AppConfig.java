@@ -27,7 +27,7 @@ import java.util.Map;
 
 public class AppConfig {
     //域名
-    public static final String HOST_BASE = "http://154.198.224.101:8081";
+    public static final String HOST_BASE = "http://api.kuang8.vip";
 //    public static final String HOST_BASE = "http://" + HOST_BASE;
     public static final String HOST(){
         if (AppConfig.getInstance().getConfigIns() != null){
@@ -37,7 +37,7 @@ public class AppConfig {
         }
     }
 
-    private static String _SOCKET_BASE_IP = "47.98.202.55";
+    private static String _SOCKET_BASE_IP = "s.kuang8.vip";
     public static final String SOCKET_BASE_IP(){
         if (AppConfig.getInstance().getConfigIns() != null){
             return AppConfig.getInstance().getConfig().socketip;

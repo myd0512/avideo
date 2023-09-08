@@ -71,7 +71,7 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.1.70.android'
     //金山播放和推流SDK
     implementation 'com.ksyun.media:libksylive-java:3.0.4'
-    implementation 'com.ksyun.media:libksylive-armv7a:3.0.4'
+    implementation 'com.ksyun.media:libksylive-arm64:3.0.4'
     //eventbus事件总线
     implementation 'org.greenrobot:eventbus:3.0.0'
     //使用Glide加载图片
