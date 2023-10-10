@@ -264,7 +264,7 @@ public class ActivityLoginCode extends AbsActivity implements View.OnClickListen
                 mLoadingDialog.dismiss();
 
                 if(0 == code){
-                    LogUtil.e("info=" + info[0]) ;
+//                    LogUtil.e("info=" + info[0]) ;
 
                     JSONObject obj = JSON.parseObject(info[0]);
                     String uid = obj.getString("uid");

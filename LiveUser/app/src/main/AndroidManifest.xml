@@ -46,7 +46,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
-
+                <data android:scheme="st49d45897ecad058d"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -326,14 +326,14 @@
 
         <meta-data
             android:name="com.sharetrace.APP_KEY"
-            android:value="53e7c04ac0c56bdc"/>
+            android:value="49d45897ecad058d"/>
         <!--友盟统计-->
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="5bff3f04b465f52652000b1e" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="com.yunbao.phonelive" />
+            android:value="com.yinjiee.ausers" />
         <!--友盟统计 end-->
 
         <!--Android 9.0移除了apache的HttpClient，而金山sdk中用到了这个，不加这个的话在Android 9.0会崩溃-->

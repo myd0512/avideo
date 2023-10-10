@@ -6,4 +6,5 @@ public class VIPBean {
     public String length;
     public String desc;
     public String coin;
+    public String give;
 }

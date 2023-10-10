@@ -105,7 +105,7 @@ public class CashAccountViewHolder extends AbsViewHolder implements View.OnClick
                 removeFromParent();
                 break;
             case R.id.btn_choose_type:
-//                chooseType();
+                chooseType();
                 break;
             case R.id.btn_confirm:
                 addCashAccount();
@@ -188,20 +188,22 @@ public class CashAccountViewHolder extends AbsViewHolder implements View.OnClick
         TextView btn1 = v.findViewById(R.id.btn_1);
         TextView btn2 = v.findViewById(R.id.btn_2);
         if (mKey == Constants.CASH_ACCOUNT_ALI) {
-            btn1.setTag(mSparseIntArray.keyAt(1));
-            btn1.setText(mSparseIntArray.valueAt(1));
-            btn2.setTag(mSparseIntArray.keyAt(2));
-            btn2.setText(mSparseIntArray.valueAt(2));
-        } else if (mKey == Constants.CASH_ACCOUNT_WX) {
             btn1.setTag(mSparseIntArray.keyAt(0));
             btn1.setText(mSparseIntArray.valueAt(0));
             btn2.setTag(mSparseIntArray.keyAt(2));
             btn2.setText(mSparseIntArray.valueAt(2));
-        } else {
+        }
+//        else if (mKey == Constants.CASH_ACCOUNT_WX) {
+//            btn1.setTag(mSparseIntArray.keyAt(0));
+//            btn1.setText(mSparseIntArray.valueAt(0));
+//            btn2.setTag(mSparseIntArray.keyAt(2));
+//            btn2.setText(mSparseIntArray.valueAt(2));
+//        }
+        else {
             btn1.setTag(mSparseIntArray.keyAt(0));
             btn1.setText(mSparseIntArray.valueAt(0));
-            btn2.setTag(mSparseIntArray.keyAt(1));
-            btn2.setText(mSparseIntArray.valueAt(1));
+            btn2.setTag(mSparseIntArray.keyAt(2));
+            btn2.setText(mSparseIntArray.valueAt(2));
         }
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override

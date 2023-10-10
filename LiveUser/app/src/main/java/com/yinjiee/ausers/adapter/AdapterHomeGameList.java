@@ -31,7 +31,7 @@ public class AdapterHomeGameList extends RecyclerView.Adapter<AdapterHomeGameLis
         mDataList.add(new GameTypeBean("3", HttpConsts.getGameNameByType("3"))) ;
         mDataList.add(new GameTypeBean("4", HttpConsts.getGameNameByType("4"))) ;
         mDataList.add(new GameTypeBean("5", HttpConsts.getGameNameByType("5"))) ;
-        mDataList.add(new GameTypeBean("6", HttpConsts.getGameNameByType("6"))) ;
+//        mDataList.add(new GameTypeBean("6", HttpConsts.getGameNameByType("6"))) ;
         mDataList.add(new GameTypeBean("7", HttpConsts.getGameNameByType("7"))) ;
     }
 

@@ -52,7 +52,7 @@ public class VIPAdapter extends HeaderAdapter{
 
     @Override
     protected RecyclerView.ViewHolder onCreateNormalViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new VIPAdapter.Vh(mInflater.inflate(R.layout.item_coin, parent, false));
+        return new VIPAdapter.Vh(mInflater.inflate(R.layout.item_vip, parent, false));
     }
 
     @Override
@@ -83,6 +83,7 @@ public class VIPAdapter extends HeaderAdapter{
             itemView.setTag(bean);
             mCoin.setText(bean.desc);
             mMoney.setText(bean.money);
+            mGive.setText("赠送 ￥"+bean.give);
 //            mMoney.setText("￥" + bean.getMoney());
 //            if (!"0".equals(bean.getGive())) {
 //                if (mGive.getVisibility() != View.VISIBLE) {

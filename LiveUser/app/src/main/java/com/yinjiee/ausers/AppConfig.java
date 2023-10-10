@@ -33,12 +33,18 @@ import java.util.Map;
 public class AppConfig {
 
     //域名
+    private String apiurl;
     public static final String HOST_BASE = "http://api.kuang8.vip";
 //    public static final String HOST_BASE = "http://47.98.202.55:8688";
+    public static final String txtUrl = "https://zbgogogo.s3.ap-east-1.amazonaws.com/host/host.txt";
+
+    public void resetUrl(String url){
+        this.apiurl = url;
+    }
 
     public static final String HOST(){
-        if (AppConfig.getInstance().getConfigIns() != null){
-            return AppConfig.getInstance().getConfig().apiurl;
+        if (AppConfig.getInstance().apiurl != null){
+            return AppConfig.getInstance().apiurl;
         }else {
             return HOST_BASE;
         }

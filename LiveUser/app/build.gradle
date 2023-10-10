@@ -18,7 +18,7 @@ android {
         useNewCruncher = false
     }
     defaultConfig {
-        applicationId "com.yinjiee.anusers"
+        applicationId "com.yinjiee.ausers"
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode

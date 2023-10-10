@@ -143,7 +143,7 @@ public class HttpUtil {
      * 获取config
      */
     public static void getConfig(final CommonCallback<ConfigBean> commonCallback) {
-        log.e("getConfig---->"+ HttpClient.getInstance().getmUrl());
+//        log.e("getConfig---->"+ HttpClient.getInstance().getmUrl());
         HttpClient.getInstance().get("Home.getConfig", HttpConsts.GET_CONFIG)
                 .execute(new HttpCallback() {
                     @Override
@@ -151,12 +151,12 @@ public class HttpUtil {
                         if (code == 0 && info.length > 0) {
                             try {
                                 JSONObject obj = JSON.parseObject(info[0]);
-                                log.e(info[0]);
+//                                log.e(info[0]);
                                 ConfigBean bean = JSON.toJavaObject(obj, ConfigBean.class);
                                 AppConfig.getInstance().setConfig(bean);
                                 AppConfig.getInstance().setLevel(obj.getString("level"));
                                 AppConfig.getInstance().setAnchorLevel(obj.getString("levelanchor"));
-                                HttpClient.getInstance().resetUrl();
+
 
                                 SpUtil.getInstance().setStringValue(SpUtil.CONFIG, info[0]);
                                 if (commonCallback != null) {

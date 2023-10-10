@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.yinjiee.ausers.AppConfig;
 import com.yinjiee.ausers.Constants;
 import com.yinjiee.ausers.R;
+import com.yinjiee.ausers.activity.ActivityExtension;
 import com.yinjiee.ausers.activity.EditProfileActivity;
 import com.yinjiee.ausers.activity.FansActivity;
 import com.yinjiee.ausers.activity.FollowActivity;
@@ -143,6 +144,12 @@ public class MainMeViewHolder extends AbsMainChildViewHolder implements OnItemCl
         @Override
         public void callback(UserBean bean) {
             List<UserItemBean> list = AppConfig.getInstance().getUserItemList();
+//            UserItemBean itemBean = new UserItemBean();
+//            itemBean.setId(100);
+//            itemBean.setName("推广赚钱");
+//            itemBean.setGroupLast(false);
+//            itemBean.setAllLast(false);
+//            list.add(itemBean);
             if (bean != null) {
                 showData(bean, list);
             }
@@ -169,6 +176,7 @@ public class MainMeViewHolder extends AbsMainChildViewHolder implements OnItemCl
         mFans.setText(StringUtil.toWan(u.getFans()));
         if (list != null && list.size() > 0) {
             if (mAdapter == null) {
+
                 mAdapter = new MainMeAdapter(mContext, list);
                 mAdapter.setOnItemClickListener(this);
                 mRecyclerView.setAdapter(mAdapter);
@@ -181,7 +189,7 @@ public class MainMeViewHolder extends AbsMainChildViewHolder implements OnItemCl
     @Override
     public void onItemClick(UserItemBean bean, int position) {
         String url = bean.getHref();
-//        log.e(bean.getId()+"..");
+        //log.e(bean.getId()+"..onItemClick");
         if (TextUtils.isEmpty(url)) {
             switch (bean.getId()) {
                 case 1:
@@ -201,6 +209,9 @@ public class MainMeViewHolder extends AbsMainChildViewHolder implements OnItemCl
                     break;
                 case 4:
                     VIPActivity.forward(mContext);
+                    break;
+                case 30:
+                    ActivityExtension.launch(mContext) ;
                     break;
 
             }
